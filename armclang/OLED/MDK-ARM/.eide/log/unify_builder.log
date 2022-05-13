@@ -1,0 +1,211 @@
+[2022-05-04 22:15:53]	[done]
+	build successfully !
+
+[2022-05-05 20:03:30]	[done]
+	build successfully !
+
+[2022-05-05 21:41:22]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a04] in <c833688a764e49d8a80e8dad07cf8dd9>:0 
+---
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_fonts.o(.rodata.u8g2_font_wqy12_t_gb2312b).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(.text.HAL_RCC_OscConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_gpio.o(.text.HAL_GPIO_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(.text.HAL_RCC_ClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_spi.o(.text.HAL_SPI_Transmit).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_decode_glyph).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_d_ssd1306_128x64_noname.o(.text.u8x8_d_ssd1306_sh1106_generic).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_read_font_info).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_spi.o(.text.SPI_WaitFlagStateUntilTimeout).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(.text.main).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_decode_len).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_hvline.o(.text.u8g2_DrawHVLine).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_spi.o(.text.HAL_SPI_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching gpio.o(.text.MX_GPIO_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_ll_hvline.o(.text.u8g2_ll_hvline_vertical_top_lsb).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_get_glyph_data).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_8x8.o(.text.u8x8_utf8_next).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_draw_string).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_cad.o(.text.u8x8_cad_SendSequence).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_setup.o(.text.u8g2_apply_clip_window).
+Error: L6406E: No space in execution regions with .ANY selector matching spi.o(.text.HAL_SPI_MspInit).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_display.o(.text.u8x8_d_helper_display_init).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(.text.SystemClock_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(.text.HAL_RCC_GetSysClockFreq).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_UpdateRefHeight).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_DrawGlyph).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_hvline.o(.text.u8g2_clip_intersection2).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.text.HAL_InitTick).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_cad.o(.text.u8x8_cad_001).
+Error: L6406E: No space in execution regions with .ANY selector matching rt_memclr_w.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching oled.o(.text.u8x8_byte_4wire_hw_spi).
+Error: L6406E: No space in execution regions with .ANY selector matching sys_stackheap_outer.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching spi.o(.text.MX_SPI1_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_d_setup.o(.text.u8g2_Setup_sh1106_128x64_noname_2).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_d_ssd1306_128x64_noname.o(.text.u8x8_d_sh1106_128x64_noname).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_decode_get_unsigned_bits).
+Error: L6406E: No space in execution regions with .ANY selector matching rt_memclr.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_msp.o(.text.HAL_MspInit).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_setup.o(.text.u8g2_SetupBuffer).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_setup.o(.text.u8g2_update_dimension_common).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f103xb.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_buffer.o(.text.u8g2_NextPage).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_buffer.o(.text.u8g2_send_buffer).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_intersection.o(.text.u8g2_IsIntersection).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_d_ssd1306_128x64_noname.o(.rodata.u8x8_d_ssd1306_128x64_noname_init_seq).
+Error: L6406E: No space in execution regions with .ANY selector matching oled.o(.text.u8g2Init).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_setup_decode).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(.text.SysTick_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_intersection.o(.text.u8g2_is_intersection_decision_tree).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(.text.NVIC_EncodePriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_rcc.o(.text.RCC_Delay).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_setup.o(.text.u8x8_SetupDefaults).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.text.HAL_Delay).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_display.o(.text.u8x8_DrawTile).
+Error: L6406E: No space in execution regions with .ANY selector matching oled.o(.text.u8x8_stm32_gpio_and_delay).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.text.HAL_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_setup.o(.text.u8x8_Setup).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_draw_glyph).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(.text.__NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_spi.o(.text.SPI_EndRxTxTransaction).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_buffer.o(.text.u8g2_send_tile_row).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_add_vector_y).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_add_vector_x).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(.text.HAL_NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_SetFont).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_hvline.o(.text.u8g2_draw_hv_line_2dir).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_decode_get_signed_bits).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.text.HAL_IncTick).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_buffer.o(.text.u8g2_SetBufferCurrTileRow).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_buffer.o(.text.u8g2_FirstPage).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_setup.o(.text.u8g2_update_page_win_r0).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_d_ssd1306_128x64_noname.o(.rodata.u8x8_sh1106_128x64_noname_display_info).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_buffer.o(.text.u8g2_ClearBuffer).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_byte.o(.text.u8x8_byte_SendByte).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(.text.read_button_GPIO).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_DrawStr).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_DrawUTF8).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_setup.o(.text.u8g2_SetMaxClipWindow).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_setup.o(.text.u8g2_draw_l90_r0).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_8x8.o(.text.u8x8_ascii_next).
+Error: L6406E: No space in execution regions with .ANY selector matching exit.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.rodata.AHBPrescTable).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_d_memory.o(.text.u8g2_m_16_8_2).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_byte.o(.text.u8x8_byte_SetDC).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_byte.o(.text.u8x8_byte_SendBytes).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_cad.o(.text.u8x8_cad_SendCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_cad.o(.text.u8x8_cad_SendArg).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_cad.o(.text.u8x8_cad_SendData).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_cad.o(.text.u8x8_cad_StartTransfer).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_cad.o(.text.u8x8_cad_EndTransfer).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_display.o(.text.u8x8_SetupMemory).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_display.o(.text.u8x8_InitDisplay).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_display.o(.text.u8x8_SetPowerSave).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_display.o(.text.u8x8_RefreshDisplay).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal.o(.text.HAL_GetTick).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_SetFontPosBaseline).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_setup.o(.rodata.u8g2_cb_r0).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_gpio.o(.text.u8x8_gpio_call).
+Error: L6406E: No space in execution regions with .ANY selector matching sys_exit.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(.text.Error_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_gpio.o(.text.HAL_GPIO_ReadPin).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_gpio.o(.text.HAL_GPIO_WritePin).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_display.o(.text.u8x8_d_helper_display_setup_memory).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(.text.HAL_NVIC_SetPriorityGrouping).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_hal_cortex.o(.text.HAL_SYSTICK_Config).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_get_word).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_setup.o(.text.u8g2_update_dimension_r0).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_8x8.o(.text.u8x8_utf8_init).
+Error: L6406E: No space in execution regions with .ANY selector matching __rtentry2.o(.ARM.Collect$$rtentry$$0000000D).
+Error: L6406E: No space in execution regions with .ANY selector matching libspace.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_d_ssd1306_128x64_noname.o(.rodata.u8x8_d_ssd1306_128x64_noname_flip0_seq).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_d_ssd1306_128x64_noname.o(.rodata.u8x8_d_ssd1306_128x64_noname_flip1_seq).
+Error: L6406E: No space in execution regions with .ANY selector matching heapauxi.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching rtexit2.o(.ARM.Collect$$rtexit$$00000004).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_d_ssd1306_128x64_noname.o(.rodata.u8x8_d_ssd1306_128x64_noname_powersave0_seq).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_d_ssd1306_128x64_noname.o(.rodata.u8x8_d_ssd1306_128x64_noname_powersave1_seq).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_get_byte).
+Error: L6406E: No space in execution regions with .ANY selector matching u8g2_font.o(.text.u8g2_font_calc_vref_font).
+Error: L6406E: No space in execution regions with .ANY selector matching u8x8_setup.o(.text.u8x8_dummy_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(.text.btn_press_up_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.UsageFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f1xx_it.o(.text.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching system_stm32f1xx.o(.text.SystemInit).
+Error: L6406E: No space in execution regions with .ANY selector matching libinit.o(.ARM.Collect$$libinit$$00000000).
+Error: L6406E: No space in execution regions with .ANY selector matching libshutdown2.o(.ARM.Collect$$libshutdown$$00000010).
+Error: L6406E: No space in execution regions with .ANY selector matching use_no_semi.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching indicate_semi.o(.text).
+Error: L6407E: Sections of aggregate size 0x1f774 bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 137 error messages.
+
+
+[2022-05-05 22:16:46]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a04] in <c833688a764e49d8a80e8dad07cf8dd9>:0 
+---
+Error: L6218E: Undefined symbol button_attach (referred from main.o).
+Error: L6218E: Undefined symbol button_init (referred from main.o).
+Error: L6218E: Undefined symbol button_start (referred from main.o).
+Error: L6218E: Undefined symbol button_ticks (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-05-05 22:17:18]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a04] in <c833688a764e49d8a80e8dad07cf8dd9>:0 
+---
+Error: L6218E: Undefined symbol button_attach (referred from main.o).
+Error: L6218E: Undefined symbol button_init (referred from main.o).
+Error: L6218E: Undefined symbol button_start (referred from main.o).
+Error: L6218E: Undefined symbol button_ticks (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-05-05 22:18:13]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a04] in <c833688a764e49d8a80e8dad07cf8dd9>:0 
+---
+Error: L6218E: Undefined symbol button_attach (referred from main.o).
+Error: L6218E: Undefined symbol button_init (referred from main.o).
+Error: L6218E: Undefined symbol button_start (referred from main.o).
+Error: L6218E: Undefined symbol button_ticks (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-05-05 22:20:29]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a04] in <c833688a764e49d8a80e8dad07cf8dd9>:0 
+---
+Error: L6218E: Undefined symbol button_attach (referred from main.o).
+Error: L6218E: Undefined symbol button_init (referred from main.o).
+Error: L6218E: Undefined symbol button_start (referred from main.o).
+Error: L6218E: Undefined symbol button_ticks (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-05-05 22:21:10]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a04] in <c833688a764e49d8a80e8dad07cf8dd9>:0 
+---
+Error: L6218E: Undefined symbol button_attach (referred from main.o).
+Error: L6218E: Undefined symbol button_init (referred from main.o).
+Error: L6218E: Undefined symbol button_start (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+
+
+[2022-05-05 22:25:27]	[done]
+	build successfully !
+
+[2022-05-05 22:57:49]	[done]
+	build successfully !
+

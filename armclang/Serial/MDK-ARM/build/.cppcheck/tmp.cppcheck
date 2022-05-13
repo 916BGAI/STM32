@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- !!! Embedded IDE: Cppcheck config template !!! -->
+<project version="1">
+    <builddir>build</builddir>
+    <platform>arm32-wchar_t2</platform>
+    <analyze-all-vs-configs>false</analyze-all-vs-configs>
+    <check-headers>true</check-headers>
+    <check-unused-templates>true</check-unused-templates>
+    <max-ctu-depth>2</max-ctu-depth>
+    <max-template-recursion>100</max-template-recursion>
+    <includedir>
+        <!-- !!! DON'T MODIFY THE FLOLLOWING CONTENTS !!! -->
+        <dir name="../../../Core/Inc/"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Inc/"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/"/>
+		<dir name="../../../Drivers/CMSIS/Device/ST/STM32F1xx/Include/"/>
+		<dir name="../../../Drivers/CMSIS/Include/"/>
+		<dir name="../../../Drivers/csrc/"/>
+		<dir name="../../../Drivers/OLED/"/>
+		<dir name="../../../Drivers/MultiButton/"/>
+		<dir name="../../.cmsis/dsp_lib/"/>
+		<dir name="../../.cmsis/include/"/>
+		<dir name="../../RTE/_OLED/"/>
+		<dir name="../../.eide/deps/"/>
+		<dir name="../../.eide/deps/"/>
+		<dir name="D:/Code/Keil_v5/ARM/ARMCLANG/include/"/>
+		<dir name="D:/Code/Keil_v5/ARM/ARMCLANG/include/libcxx/"/>
+    </includedir>
+    <defines>
+        <!-- example: <define name="DEF=123"/> -->
+        <define name="__VSCODE_CPPTOOL"/>
+		<define name="USE_HAL_DRIVER"/>
+		<define name="STM32F103xB"/>
+    </defines>
+    <undefines>
+        <!-- example: <undefine>UNDEF</undefine> -->
+    </undefines>
+    <paths>
+        <!-- !!! DON'T MODIFY THE FLOLLOWING CONTENTS !!! -->
+        <dir name="../../../Drivers/MultiButton/multi_button.c"/>
+		<dir name="../../../Drivers/OLED/oled.c"/>
+		<dir name="../../../Drivers/csrc/mui.c"/>
+		<dir name="../../../Drivers/csrc/mui_u8g2.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_bitmap.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_box.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_buffer.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_button.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_circle.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_cleardisplay.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_d_memory.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_d_setup.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_font.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_fonts.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_hvline.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_input_value.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_intersection.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_kerning.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_line.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_ll_hvline.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_message.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_polygon.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_selection_list.c"/>
+		<dir name="../../../Drivers/csrc/u8g2_setup.c"/>
+		<dir name="../../../Drivers/csrc/u8log.c"/>
+		<dir name="../../../Drivers/csrc/u8log_u8g2.c"/>
+		<dir name="../../../Drivers/csrc/u8log_u8x8.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_8x8.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_byte.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_cad.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_capture.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_sh1106_64x32.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_sh1106_72x40.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_48x64.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_64x32.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_64x48.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_72x40.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_96x16.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_96x40.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_128x32.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_128x64_noname.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_ssd1306_2040x16.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_d_stdio.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_debounce.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_display.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_fonts.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_gpio.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_input_value.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_message.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_selection_list.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_setup.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_string.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_u8toa.c"/>
+		<dir name="../../../Drivers/csrc/u8x8_u16toa.c"/>
+		<dir name="../../../Core/Src/system_stm32f1xx.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"/>
+		<dir name="../../../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"/>
+		<dir name="../../../Core/Src/gpio.c"/>
+		<dir name="../../../Core/Src/main.c"/>
+		<dir name="../../../Core/Src/spi.c"/>
+		<dir name="../../../Core/Src/stm32f1xx_hal_msp.c"/>
+		<dir name="../../../Core/Src/stm32f1xx_it.c"/>
+		<dir name="../../../Core/Src/usart.c"/>
+    </paths>
+    <libraries>
+        <!-- example: <library>gnu</library> -->
+        <library>gnu</library>
+    </libraries>
+</project>
