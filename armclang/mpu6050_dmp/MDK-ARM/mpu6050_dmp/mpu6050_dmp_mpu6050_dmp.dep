@@ -1,0 +1,1082 @@
+Dependencies for Project 'mpu6050_dmp', Target 'mpu6050_dmp': (DO NOT MODIFY !)
+CompilerVersion: 6180000::V6.18::ARMCLANG
+F (startup_stm32f103xb.s)(0x62850185)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 537" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F10X_MD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o mpu6050_dmp/startup_stm32f103xb.o)
+F (../Core/Src/main.c)(0x6290D695)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/main.o -MD)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+I (..\Core\Inc\i2c.h)(0x627E1E62)
+I (..\Core\Inc\usart.h)(0x627E1E62)
+I (..\Core\Inc\gpio.h)(0x627E1E62)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\porting\MPU6050.h)(0x6284F72B)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.h)(0x627FBBDD)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.h)(0x627E4FCB)
+I (..\Drivers\MPU6050_Motion_Driver\eMPL-hal\eMPL_outputs.h)(0x627E500E)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mpu.h)(0x627E4FE1)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\Drivers\MPU6050_Motion_Driver\driver\stm32L\packet.h)(0x627E5004)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\mpl.h)(0x627E502B)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h)(0x627E5018)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\invensense_adv.h)(0x627FB7BA)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\accel_auto_cal.h)(0x627E5053)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\compass_vec_cal.h)(0x627E5055)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\fast_no_motion.h)(0x627E5057)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\fusion_9axis.h)(0x627E5058)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\gyro_tc.h)(0x627FB7D8)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\heading_from_gyro.h)(0x627E505B)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\mag_disturb.h)(0x627E5063)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\motion_no_motion.h)(0x627E5066)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\no_gyro_fusion.h)(0x627E5067)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\quaternion_supervisor.h)(0x627E5069)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\invensense.h)(0x627E501F)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\hal_outputs.h)(0x627E501C)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.h)(0x627E5022)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h)(0x627E502F)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h)(0x627E5034)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.h)(0x627E5040)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlinclude.h)(0x627E4FD7)
+F (../Core/Src/gpio.c)(0x62850180)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/gpio.o -MD)
+I (..\Core\Inc\gpio.h)(0x627E1E62)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Core/Src/i2c.c)(0x627F362C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/i2c.o -MD)
+I (..\Core\Inc\i2c.h)(0x627E1E62)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Core/Src/usart.c)(0x627F362C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/usart.o -MD)
+I (..\Core\Inc\usart.h)(0x627E1E62)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+F (../Core/Src/stm32f1xx_it.c)(0x6285016C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_it.o -MD)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_it.h)(0x6285016D)
+F (../Core/Src/stm32f1xx_hal_msp.c)(0x627E1E62)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_msp.o -MD)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_gpio_ex.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_i2c.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_rcc.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_rcc_ex.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_gpio.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_dma.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_cortex.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_pwr.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_flash.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_flash_ex.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_exti.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_tim.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_tim_ex.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1xx_hal_uart.o -MD)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (../Core/Src/system_stm32f1xx.c)(0x627BAE5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/system_stm32f1xx.o -MD)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\dmpKey.h)(0x627E4F96)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\dmpmap.h)(0x627E4FAF)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.c)(0x627FBCB0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/inv_mpu.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.h)(0x627FBBDD)
+I (..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h)(0x627FB942)
+I (..\Core\Inc\i2c.h)(0x627E1E62)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+F (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.h)(0x627FBBDD)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.c)(0x627FBB71)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/inv_mpu_dmp_motion_driver.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.h)(0x627FBBDD)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.h)(0x627E4FCB)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\dmpKey.h)(0x627E4F96)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\dmpmap.h)(0x627E4FAF)
+I (..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h)(0x627FB942)
+I (..\Core\Inc\i2c.h)(0x627E1E62)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.h)(0x627E4FCB)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\include\mlinclude.h)(0x627E4FD7)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\include\mlos.h)(0x627E4FDD)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\include\mpu.h)(0x627E4FE1)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)()
+F (..\Drivers\MPU6050_Motion_Driver\driver\stm32L\log_stm32.c)(0x627E5002)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/log_stm32.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\Drivers\MPU6050_Motion_Driver\driver\stm32L\packet.h)(0x627E5004)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+I (..\Core\Inc\usart.h)(0x627E1E62)
+I (..\Core\Inc\main.h)(0x627E1E63)
+F (..\Drivers\MPU6050_Motion_Driver\driver\stm32L\packet.h)(0x627E5004)()
+F (..\Drivers\MPU6050_Motion_Driver\eMPL-hal\eMPL_outputs.c)(0x627E500D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/empl_outputs.o -MD)
+I (..\Drivers\MPU6050_Motion_Driver\eMPL-hal\eMPL_outputs.h)(0x627E500E)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h)(0x627E5034)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h)(0x627E5018)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h)(0x627E502F)
+F (..\Drivers\MPU6050_Motion_Driver\eMPL-hal\eMPL_outputs.h)(0x627E500E)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.c)(0x627E5016)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/data_builder.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h)(0x627E5018)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.h)(0x627E5040)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.h)(0x627E5022)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h)(0x627E502F)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h)(0x627E5018)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\hal_outputs.c)(0x627E501A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/hal_outputs.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\hal_outputs.h)(0x627E501C)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h)(0x627E5034)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h)(0x627E5018)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h)(0x627E502F)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\hal_outputs.h)(0x627E501C)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\invensense.h)(0x627E501F)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.c)(0x627E5020)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/message_layer.o -MD)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.h)(0x627E5022)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.h)(0x627E5022)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.c)(0x627E5024)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/ml_math_func.o -MD)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlinclude.h)(0x627E4FD7)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\mlmath.c)(0x627E5028)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/mlmath.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\mpl.c)(0x627E5029)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/mpl.o -MD)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.h)(0x627E5040)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\mpl.h)(0x627E502B)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h)(0x627E5034)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h)(0x627E5018)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h)(0x627E502F)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlinclude.h)(0x627E4FD7)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\mpl.h)(0x627E502B)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.c)(0x627E502D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/results_holder.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h)(0x627E502F)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h)(0x627E5034)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h)(0x627E5018)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.h)(0x627E5022)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h)(0x627E502F)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.c)(0x627E5032)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/start_manager.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h)(0x627E5034)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h)(0x627E5034)()
+F (..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.c)(0x627E5036)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/storage_manager.o -MD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.h)(0x627E5040)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+F (..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.h)(0x627E5040)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\accel_auto_cal.h)(0x627E5053)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\compass_vec_cal.h)(0x627E5055)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\fast_no_motion.h)(0x627E5057)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\fusion_9axis.h)(0x627E5058)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\gyro_tc.h)(0x627FB7D8)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\heading_from_gyro.h)(0x627E505B)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\inv_math.h)(0x627E505D)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\invensense_adv.h)(0x627FB7BA)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\mag_disturb.h)(0x627E5063)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\motion_no_motion.h)(0x627E5066)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\no_gyro_fusion.h)(0x627E5067)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\quaternion_supervisor.h)(0x627E5069)()
+F (..\Drivers\MPU6050_Motion_Driver\mpl\libmpllib.lib)(0x5462691F)()
+F (..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.c)(0x627E506F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/stm32f1_porting.o -MD)
+I (..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h)(0x627FB942)
+I (..\Core\Inc\i2c.h)(0x627E1E62)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+F (..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h)(0x627FB942)()
+F (..\Drivers\MPU6050_Motion_Driver\porting\MPU6050.c)(0x6285092A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Drivers/MPU6050_Motion_Driver/driver/eMPL -I ../Drivers/MPU6050_Motion_Driver/driver/include -I ../Drivers/MPU6050_Motion_Driver/driver/stm32L -I ../Drivers/MPU6050_Motion_Driver/eMPL-hal -I ../Drivers/MPU6050_Motion_Driver/mllite -I ../Drivers/MPU6050_Motion_Driver/mpl -I ../Drivers/MPU6050_Motion_Driver/porting-I./RTE/_mpu6050_dmp-ID:/Code/Keil_v5/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Code/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DEMPL_TARGET_STM32F1 -DEMPL -DMPL_LOG_NDEBUG="0" -DMPU6050 -DUSE_DMP -DREMOVE_LOGGING-o mpu6050_dmp/mpu6050.o -MD)
+I (..\Drivers\MPU6050_Motion_Driver\porting\MPU6050.h)(0x6284F72B)
+I (..\Core\Inc\main.h)(0x627E1E63)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x627BAE5C)
+I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x62850182)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h)(0x627BAE5C)
+I (..\Drivers\CMSIS\Include\core_cm3.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x627BAE51)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x627BAE51)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x625260D6)
+I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x627BAE5C)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_exti.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_dma_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x627BAE5C)
+I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x627BAE5C)
+I (..\Core\Inc\i2c.h)(0x627E1E62)
+I (..\Core\Inc\usart.h)(0x627E1E62)
+I (..\Core\Inc\gpio.h)(0x627E1E62)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.h)(0x627FBBDD)
+I (..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.h)(0x627E4FCB)
+I (..\Drivers\MPU6050_Motion_Driver\eMPL-hal\eMPL_outputs.h)(0x627E500E)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h)(0x627E4FDF)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h)(0x627E4FFD)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mpu.h)(0x627E4FE1)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\log.h)(0x627E4FD6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\Drivers\MPU6050_Motion_Driver\driver\stm32L\packet.h)(0x627E5004)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\mpl.h)(0x627E502B)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h)(0x627E5018)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\invensense_adv.h)(0x627FB7BA)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\accel_auto_cal.h)(0x627E5053)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\compass_vec_cal.h)(0x627E5055)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\fast_no_motion.h)(0x627E5057)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\fusion_9axis.h)(0x627E5058)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\gyro_tc.h)(0x627FB7D8)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\heading_from_gyro.h)(0x627E505B)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\mag_disturb.h)(0x627E5063)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\motion_no_motion.h)(0x627E5066)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\no_gyro_fusion.h)(0x627E5067)
+I (..\Drivers\MPU6050_Motion_Driver\mpl\quaternion_supervisor.h)(0x627E5069)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\invensense.h)(0x627E501F)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\hal_outputs.h)(0x627E501C)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.h)(0x627E5022)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h)(0x627E4FD9)
+I (D:\Code\Keil_v5\ARM\ARMCLANG\include\math.h)(0x625260D6)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h)(0x627E5026)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h)(0x627E502F)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h)(0x627E5034)
+I (..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.h)(0x627E5040)
+I (..\Drivers\MPU6050_Motion_Driver\driver\include\mlinclude.h)(0x627E4FD7)
+F (..\Drivers\MPU6050_Motion_Driver\porting\MPU6050.h)(0x6284F72B)()

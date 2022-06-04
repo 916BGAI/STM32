@@ -1,0 +1,71 @@
+[2022-05-13 20:37:52]	[done]
+	build successfully !
+
+[2022-05-13 22:11:27]	[done]
+	build successfully !
+
+[2022-05-14 12:48:46]	[done]
+	build successfully !
+
+[2022-05-14 12:50:34]	[done]
+	build successfully !
+
+[2022-05-14 12:57:29]	[done]
+	build successfully !
+
+[2022-05-14 12:59:15]	[done]
+	build successfully !
+
+[2022-05-14 13:02:52]	[done]
+	build successfully !
+
+[2022-05-14 13:09:40]	[done]
+	build successfully !
+
+[2022-05-14 13:10:13]	[done]
+	build successfully !
+
+[2022-05-14 13:11:15]	[done]
+	build successfully !
+
+[2022-05-14 13:25:25]	[done]
+	build successfully !
+
+[2022-05-14 13:45:03]	[done]
+	build successfully !
+
+[2022-05-14 13:55:39]	[done]
+	build successfully !
+
+[2022-05-14 15:27:42]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0191f] in <b9271b40b8c2421c89943586cdcc8f1f>:0 
+---
+Error: L6218E: Undefined symbol run_self_test (referred from MPU6050.o).
+Error: L6218E: Undefined symbol mpl_key (referred from quaternion_supervisor.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-05-14 17:01:18]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0191f] in <b9271b40b8c2421c89943586cdcc8f1f>:0 
+---
+Error: L6218E: Undefined symbol mpl_key (referred from quaternion_supervisor.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-05-14 22:15:01]	[done]
+	build successfully !
+
+[2022-05-19 16:16:37]	[done]
+	build successfully !
+
+[2022-05-19 16:23:00]	[done]
+	build successfully !
+
+[2022-05-19 16:36:50]	[done]
+	build successfully !
+
+[2022-05-19 16:38:18]	[done]
+	build successfully !
+
