@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"cube_usart1\startup_stm32f103xb.o"
+"cube_usart1\main.o"
+"cube_usart1\gpio.o"
+"cube_usart1\usart.o"
+"cube_usart1\stm32f1xx_it.o"
+"cube_usart1\stm32f1xx_hal_msp.o"
+"cube_usart1\stm32f1xx_hal_gpio_ex.o"
+"cube_usart1\stm32f1xx_hal_tim.o"
+"cube_usart1\stm32f1xx_hal_tim_ex.o"
+"cube_usart1\stm32f1xx_hal_uart.o"
+"cube_usart1\stm32f1xx_hal.o"
+"cube_usart1\stm32f1xx_hal_rcc.o"
+"cube_usart1\stm32f1xx_hal_rcc_ex.o"
+"cube_usart1\stm32f1xx_hal_gpio.o"
+"cube_usart1\stm32f1xx_hal_dma.o"
+"cube_usart1\stm32f1xx_hal_cortex.o"
+"cube_usart1\stm32f1xx_hal_pwr.o"
+"cube_usart1\stm32f1xx_hal_flash.o"
+"cube_usart1\stm32f1xx_hal_flash_ex.o"
+"cube_usart1\stm32f1xx_hal_exti.o"
+"cube_usart1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Cube_USART1\Cube_USART1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Cube_USART1.map" -o Cube_USART1\Cube_USART1.axf
