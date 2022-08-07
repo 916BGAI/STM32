@@ -35,4 +35,6 @@ oled/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\limits.h \
   ..\Drivers\MultiButton\multi_button.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h
+  D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  ..\Drivers\RTT\log.h ..\Drivers\RTT\SEGGER_RTT.h \
+  ..\Drivers\RTT\SEGGER_RTT_Conf.h

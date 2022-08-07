@@ -76,7 +76,14 @@
 "oled\u8x8_u16toa.o"
 "oled\oled.o"
 "oled\multi_button.o"
---library_type=microlib --strict --scatter "OLED\OLED.sct"
+"oled\segger_rtt.o"
+"oled\segger_rtt_printf.o"
+"oled\segger_rtt_syscalls_gcc.o"
+"oled\segger_rtt_syscalls_iar.o"
+"oled\segger_rtt_syscalls_keil.o"
+"oled\segger_rtt_syscalls_ses.o"
+"oled\retarget_io.o"
+--strict --scatter "OLED\OLED.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "OLED.map" -o OLED\OLED.axf
