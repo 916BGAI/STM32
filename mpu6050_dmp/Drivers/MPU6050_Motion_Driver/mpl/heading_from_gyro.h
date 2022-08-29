@@ -16,8 +16,7 @@
 #include "mltypes.h"
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
     inv_error_t inv_enable_heading_from_gyro(void);
@@ -30,4 +29,5 @@ extern "C"
 }
 #endif
 
-#endif /* _HEADING_FROM_GYRO_H_ */
+
+#endif  /* _HEADING_FROM_GYRO_H_ */

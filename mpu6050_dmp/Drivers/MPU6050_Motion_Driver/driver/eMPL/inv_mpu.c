@@ -37,30 +37,17 @@
  * min(int a, int b)
  */
 #if defined EMPL_TARGET_STM32F1
-#include "STM32F1_porting.h" //声明Sensors_I2C_WriteRegister和Sensors_I2C_ReadRegister
-#include "log.h"
+#include "i2c.h"
 #include "main.h"
-// #include "mpu6050.h"
+#include "log.h"
+#include "STM32F1_porting.h"
 
 #define i2c_write Sensors_I2C_WriteRegister
 #define i2c_read Sensors_I2C_ReadRegister
 #define delay_ms HAL_Delay
 #define get_ms get_ms_user
-#define log_i printf
-#define log_e printf
-#define min(a, b) ((a < b) ? a : b)
-
-#elif defined EMPL_TARGET_STM32F4
-#include "i2c.h"
-#include "main.h"
-#include "log.h"
-
-#define i2c_write Sensors_I2C_WriteRegister
-#define i2c_read Sensors_I2C_ReadRegister
-#define delay_ms mdelay
-#define get_ms get_tick_count
-#define log_i MPL_LOGI
-#define log_e MPL_LOGE
+#define log_i LOGI
+#define log_e LOGE
 #define min(a, b) ((a < b) ? a : b)
 
 #elif defined MOTION_DRIVER_TARGET_MSP430
@@ -806,11 +793,9 @@ int mpu_init(struct int_param_s *int_param)
     if (mpu_configure_fifo(0))
         return -1;
 
-#ifndef EMPL_TARGET_STM32F4
 #ifndef EMPL_TARGET_STM32F1
     if (int_param)
         reg_int_cb(int_param);
-#endif
 #endif
 
 #ifdef AK89xx_SECONDARY

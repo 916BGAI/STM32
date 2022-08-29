@@ -148,9 +148,7 @@
     "options": "null"
   },
   "uploader": "JLink",
-  "srcDirs": [
-    "./.eide/deps"
-  ],
+  "srcDirs": [],
   "virtualFolder": {
     "name": "<virtual_root>",
     "files": [],
@@ -524,5 +522,5 @@
       "excludeList": []
     }
   },
-  "version": "3.1"
+  "version": "3.2"
 }

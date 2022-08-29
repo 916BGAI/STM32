@@ -9,6 +9,8 @@ mpu6050_dmp/mpl.o: ..\Drivers\MPU6050_Motion_Driver\mllite\mpl.c \
   ..\Drivers\MPU6050_Motion_Driver\driver\include\log.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\Drivers\RTT\RTT.h ..\Drivers\RTT\SEGGER_RTT.h \
+  ..\Drivers\RTT\SEGGER_RTT_Conf.h \
   ..\Drivers\MPU6050_Motion_Driver\mllite\mpl.h \
   ..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h \
   ..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h \

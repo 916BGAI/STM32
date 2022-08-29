@@ -9,16 +9,16 @@
 
 #include "mltypes.h"
 
+
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
-    inv_error_t inv_enable_quaternion(void);
-    inv_error_t inv_disable_quaternion(void);
-    inv_error_t inv_init_quaternion(void);
-    inv_error_t inv_start_quaternion(void);
-    void inv_set_quaternion(long *quat);
+inv_error_t inv_enable_quaternion(void);
+inv_error_t inv_disable_quaternion(void);
+inv_error_t inv_init_quaternion(void);
+inv_error_t inv_start_quaternion(void);
+void inv_set_quaternion(long *quat);
 
 #ifdef __cplusplus
 }

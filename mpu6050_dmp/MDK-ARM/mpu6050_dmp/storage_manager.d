@@ -10,6 +10,8 @@ mpu6050_dmp/storage_manager.o: \
   ..\Drivers\MPU6050_Motion_Driver\driver\include\log.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\Drivers\RTT\RTT.h ..\Drivers\RTT\SEGGER_RTT.h \
+  ..\Drivers\RTT\SEGGER_RTT_Conf.h \
   ..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h \
   ..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h

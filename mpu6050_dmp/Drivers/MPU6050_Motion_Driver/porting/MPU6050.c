@@ -46,10 +46,12 @@ struct platform_data_s
  * boards at Invensense. If needed, please modify the matrices to match the
  * chip-to-body matrix for your particular set up.
  */
+
 static struct platform_data_s gyro_pdata = {
     .orientation = {1, 0, 0,
                     0, 1, 0,
                     0, 0, 1}};
+
 /* Private typedef ----------------------------------------------------------------------------------------------------------------*/
 
 /**********************************************
@@ -276,110 +278,110 @@ int get_tick_count(unsigned long *count)
 函数参数：无
 函数返回值：无
 **********************************************/
-static void read_from_mpl(void)
-{
-    long msg, data[9];
-    int8_t accuracy;
-    unsigned long timestamp;
-    float float_data[3] = {0};
+// static void read_from_mpl(void)
+// {
+//     long msg, data[9];
+//     int8_t accuracy;
+//     unsigned long timestamp;
+//     float float_data[3] = {0};
 
-    if (inv_get_sensor_type_quat(data, &accuracy, (inv_time_t *)&timestamp))
-    {
-        /* 将四元数数据包发送到PC上位机，使用其来直观的表示3D四元数
-           因此每次MPL有新数据时都会执行该函数 */
-        eMPL_send_quat(data);
+//     if (inv_get_sensor_type_quat(data, &accuracy, (inv_time_t *)&timestamp))
+//     {
+//         /* 将四元数数据包发送到PC上位机，使用其来直观的表示3D四元数
+//            因此每次MPL有新数据时都会执行该函数 */
+//         eMPL_send_quat(data);
 
-        /* 可以使用USB串口命令发送或禁止特定的数据包 */
-        if (hal.report & PRINT_QUAT)
-            eMPL_send_data(PACKET_DATA_QUAT, data);
-    }
+//         /* 可以使用USB串口命令发送或禁止特定的数据包 */
+//         if (hal.report & PRINT_QUAT)
+//             eMPL_send_data(PACKET_DATA_QUAT, data);
+//     }
 
-    if (hal.report & PRINT_ACCEL)
-    {
-        if (inv_get_sensor_type_accel(data, &accuracy,
-                                      (inv_time_t *)&timestamp))
-            eMPL_send_data(PACKET_DATA_ACCEL, data);
-    }
-    if (hal.report & PRINT_GYRO)
-    {
-        if (inv_get_sensor_type_gyro(data, &accuracy,
-                                     (inv_time_t *)&timestamp))
-            eMPL_send_data(PACKET_DATA_GYRO, data);
-    }
-#ifdef COMPASS_ENABLED
-    if (hal.report & PRINT_COMPASS)
-    {
-        if (inv_get_sensor_type_compass(data, &accuracy,
-                                        (inv_time_t *)&timestamp))
-            eMPL_send_data(PACKET_DATA_COMPASS, data);
-    }
-#endif
-    if (hal.report & PRINT_EULER)
-    {
-        if (inv_get_sensor_type_euler(data, &accuracy,
-                                      (inv_time_t *)&timestamp))
-            eMPL_send_data(PACKET_DATA_EULER, data);
-    }
-    if (hal.report & PRINT_ROT_MAT)
-    {
-        if (inv_get_sensor_type_rot_mat(data, &accuracy,
-                                        (inv_time_t *)&timestamp))
-            eMPL_send_data(PACKET_DATA_ROT, data);
-    }
-    if (hal.report & PRINT_HEADING)
-    {
-        if (inv_get_sensor_type_heading(data, &accuracy,
-                                        (inv_time_t *)&timestamp))
-            eMPL_send_data(PACKET_DATA_HEADING, data);
-    }
-    if (hal.report & PRINT_LINEAR_ACCEL)
-    {
-        if (inv_get_sensor_type_linear_acceleration(float_data, &accuracy, (inv_time_t *)&timestamp))
-        {
-            MPL_LOGI("Linear Accel: %7.5f %7.5f %7.5f\r\n",
-                     float_data[0], float_data[1], float_data[2]);
-        }
-    }
-    if (hal.report & PRINT_GRAVITY_VECTOR)
-    {
-        if (inv_get_sensor_type_gravity(float_data, &accuracy,
-                                        (inv_time_t *)&timestamp))
-            MPL_LOGI("Gravity Vector: %7.5f %7.5f %7.5f\r\n",
-                     float_data[0], float_data[1], float_data[2]);
-    }
-    if (hal.report & PRINT_PEDO)
-    {
-        unsigned long timestamp;
-        timestamp = HAL_GetTick();
-        if (timestamp > hal.next_pedo_ms)
-        {
-            hal.next_pedo_ms = timestamp + PEDO_READ_MS;
-            unsigned long step_count, walk_time;
-            dmp_get_pedometer_step_count(&step_count);
-            dmp_get_pedometer_walk_time(&walk_time);
-            MPL_LOGI("Walked %ld steps over %ld milliseconds..\n", step_count,
-                     walk_time);
-        }
-    }
+//     if (hal.report & PRINT_ACCEL)
+//     {
+//         if (inv_get_sensor_type_accel(data, &accuracy,
+//                                       (inv_time_t *)&timestamp))
+//             eMPL_send_data(PACKET_DATA_ACCEL, data);
+//     }
+//     if (hal.report & PRINT_GYRO)
+//     {
+//         if (inv_get_sensor_type_gyro(data, &accuracy,
+//                                      (inv_time_t *)&timestamp))
+//             eMPL_send_data(PACKET_DATA_GYRO, data);
+//     }
+// #ifdef COMPASS_ENABLED
+//     if (hal.report & PRINT_COMPASS)
+//     {
+//         if (inv_get_sensor_type_compass(data, &accuracy,
+//                                         (inv_time_t *)&timestamp))
+//             eMPL_send_data(PACKET_DATA_COMPASS, data);
+//     }
+// #endif
+//     if (hal.report & PRINT_EULER)
+//     {
+//         if (inv_get_sensor_type_euler(data, &accuracy,
+//                                       (inv_time_t *)&timestamp))
+//             eMPL_send_data(PACKET_DATA_EULER, data);
+//     }
+//     if (hal.report & PRINT_ROT_MAT)
+//     {
+//         if (inv_get_sensor_type_rot_mat(data, &accuracy,
+//                                         (inv_time_t *)&timestamp))
+//             eMPL_send_data(PACKET_DATA_ROT, data);
+//     }
+//     if (hal.report & PRINT_HEADING)
+//     {
+//         if (inv_get_sensor_type_heading(data, &accuracy,
+//                                         (inv_time_t *)&timestamp))
+//             eMPL_send_data(PACKET_DATA_HEADING, data);
+//     }
+//     if (hal.report & PRINT_LINEAR_ACCEL)
+//     {
+//         if (inv_get_sensor_type_linear_acceleration(float_data, &accuracy, (inv_time_t *)&timestamp))
+//         {
+//             MPL_LOGI("Linear Accel: %7.5f %7.5f %7.5f\r\n",
+//                      float_data[0], float_data[1], float_data[2]);
+//         }
+//     }
+//     if (hal.report & PRINT_GRAVITY_VECTOR)
+//     {
+//         if (inv_get_sensor_type_gravity(float_data, &accuracy,
+//                                         (inv_time_t *)&timestamp))
+//             MPL_LOGI("Gravity Vector: %7.5f %7.5f %7.5f\r\n",
+//                      float_data[0], float_data[1], float_data[2]);
+//     }
+//     if (hal.report & PRINT_PEDO)
+//     {
+//         unsigned long timestamp;
+//         timestamp = HAL_GetTick();
+//         if (timestamp > hal.next_pedo_ms)
+//         {
+//             hal.next_pedo_ms = timestamp + PEDO_READ_MS;
+//             unsigned long step_count, walk_time;
+//             dmp_get_pedometer_step_count(&step_count);
+//             dmp_get_pedometer_walk_time(&walk_time);
+//             MPL_LOGI("Walked %ld steps over %ld milliseconds..\n", step_count,
+//                      walk_time);
+//         }
+//     }
 
-    /* Whenever the MPL detects a change in motion state, the application can
-     * be notified. For this example, we use an LED to represent the current
-     * motion state.
-     */
-    msg = inv_get_message_level_0(INV_MSG_MOTION_EVENT |
-                                  INV_MSG_NO_MOTION_EVENT);
-    if (msg)
-    {
-        if (msg & INV_MSG_MOTION_EVENT)
-        {
-            MPL_LOGI("Motion!\n");
-        }
-        else if (msg & INV_MSG_NO_MOTION_EVENT)
-        {
-            MPL_LOGI("No motion!\n");
-        }
-    }
-}
+//     /* Whenever the MPL detects a change in motion state, the application can
+//      * be notified. For this example, we use an LED to represent the current
+//      * motion state.
+//      */
+//     msg = inv_get_message_level_0(INV_MSG_MOTION_EVENT |
+//                                   INV_MSG_NO_MOTION_EVENT);
+//     if (msg)
+//     {
+//         if (msg & INV_MSG_MOTION_EVENT)
+//         {
+//             MPL_LOGI("Motion!\n");
+//         }
+//         else if (msg & INV_MSG_NO_MOTION_EVENT)
+//         {
+//             MPL_LOGI("No motion!\n");
+//         }
+//     }
+// }
 
 /**********************************************
 函数名称：send_status_compass
@@ -580,237 +582,237 @@ static inline void run_self_test(void)
 函数参数：无
 函数返回值：无
 **********************************************/
-static void handle_input(void)
-{
+// static void handle_input(void)
+// {
 
-    char c;
-    HAL_UART_Receive(&huart2, (uint8_t *)&c, 1, 1000);
+//     char c;
+//     HAL_UART_Receive(&huart2, (uint8_t *)&c, 1, 1000);
 
-    switch (c)
-    {
-        /* 这些命令用来关闭单个传感器 */
-        case '8':
-            hal.sensors ^= ACCEL_ON;
-            setup_gyro();
-            if (!(hal.sensors & ACCEL_ON))
-                inv_accel_was_turned_off();
-            break;
-        case '9':
-            hal.sensors ^= GYRO_ON;
-            setup_gyro();
-            if (!(hal.sensors & GYRO_ON))
-                inv_gyro_was_turned_off();
-            break;
-#ifdef COMPASS_ENABLED
-        case '0':
-            hal.sensors ^= COMPASS_ON;
-            setup_gyro();
-            if (!(hal.sensors & COMPASS_ON))
-                inv_compass_was_turned_off();
-            break;
-#endif
-        /* 这些命令将单个传感器数据或融合数据发送到PC上位机 */
-        case 'a':
-            hal.report ^= PRINT_ACCEL;
-            break;
-        case 'g':
-            hal.report ^= PRINT_GYRO;
-            break;
-#ifdef COMPASS_ENABLED
-        case 'c':
-            hal.report ^= PRINT_COMPASS;
-            break;
-#endif
-        case 'e':
-            hal.report ^= PRINT_EULER;
-            break;
-        case 'r':
-            hal.report ^= PRINT_ROT_MAT;
-            break;
-        case 'q':
-            hal.report ^= PRINT_QUAT;
-            break;
-        case 'h':
-            hal.report ^= PRINT_HEADING;
-            break;
-        case 'i':
-            hal.report ^= PRINT_LINEAR_ACCEL;
-            break;
-        case 'o':
-            hal.report ^= PRINT_GRAVITY_VECTOR;
-            break;
-#ifdef COMPASS_ENABLED
-        case 'w':
-            send_status_compass();
-            break;
-#endif
-        /* 此命令打印出每个陀螺仪寄存器的值以进行调试。如果禁用日志记录，则此功能无效 */
-        case 'd':
-            mpu_reg_dump();
-            break;
-        /* 测试低功耗加速模式 */
-        case 'p':
-            if (hal.dmp_on)
-                /* LP加速模式与DMP不兼容 */
-                break;
-            mpu_lp_accel_mode(20);
-            /* 启用LP加速度模式时，驱动程序将自动为锁存的中断配置硬件，
-            但是，MCU有时会错过上升/下降沿，并且永远不会设置hal.new_gyro标志。
-            为避免锁定在这种状态下，我们覆盖了驱动程序的配置并坚持使用未锁定的中断模式 */
-            /* 要求：MCU支持电平触发的中断 */
-            mpu_set_int_latched(0);
-            hal.sensors &= ~(GYRO_ON | COMPASS_ON);
-            hal.sensors |= ACCEL_ON;
-            hal.lp_accel_mode = 1;
-            inv_gyro_was_turned_off();
-            inv_compass_was_turned_off();
-            break;
-        /* 硬件自检可以在不完全与MPL交互的情况下运行，应为它完全位于陀螺仪驱动程序中
-           假定已启用日志记录，否则，可以在此处使用几个LED来显示测试结果 */
-        case 't':
-            run_self_test();
-            /* 告诉MPL传感器已关闭 */
-            inv_accel_was_turned_off();
-            inv_gyro_was_turned_off();
-            inv_compass_was_turned_off();
-            break;
-        /* 根据你的程序，可能需要更改或更慢速率的传感器数据，这些命令可以加快或减慢将传感器数据推送到MPL的速度， */
-        /* 在本示例中，指南针速率始终不变 */
-        case '1':
-            if (hal.dmp_on)
-            {
-                dmp_set_fifo_rate(10);
-                inv_set_quat_sample_rate(100000L);
-            }
-            else
-                mpu_set_sample_rate(10);
-            inv_set_gyro_sample_rate(100000L);
-            inv_set_accel_sample_rate(100000L);
-            break;
-        case '2':
-            if (hal.dmp_on)
-            {
-                dmp_set_fifo_rate(20);
-                inv_set_quat_sample_rate(50000L);
-            }
-            else
-                mpu_set_sample_rate(20);
-            inv_set_gyro_sample_rate(50000L);
-            inv_set_accel_sample_rate(50000L);
-            break;
-        case '3':
-            if (hal.dmp_on)
-            {
-                dmp_set_fifo_rate(40);
-                inv_set_quat_sample_rate(25000L);
-            }
-            else
-                mpu_set_sample_rate(40);
-            inv_set_gyro_sample_rate(25000L);
-            inv_set_accel_sample_rate(25000L);
-            break;
-        case '4':
-            if (hal.dmp_on)
-            {
-                dmp_set_fifo_rate(50);
-                inv_set_quat_sample_rate(20000L);
-            }
-            else
-                mpu_set_sample_rate(50);
-            inv_set_gyro_sample_rate(20000L);
-            inv_set_accel_sample_rate(20000L);
-            break;
-        case '5':
-            if (hal.dmp_on)
-            {
-                dmp_set_fifo_rate(100);
-                inv_set_quat_sample_rate(10000L);
-            }
-            else
-                mpu_set_sample_rate(100);
-            inv_set_gyro_sample_rate(10000L);
-            inv_set_accel_sample_rate(10000L);
-            break;
-        case ',':
-            /* 将硬件设置为仅在手势事件时中断，此功能对于保持MCU处于休眠状态，直到DMP检测到发生轻敲或定向事件为止 */
-            dmp_set_interrupt_mode(DMP_INT_GESTURE);
-            break;
-        case '.':
-            /* 将硬件设置为周期性中断 */
-            dmp_set_interrupt_mode(DMP_INT_CONTINUOUS);
-            break;
-        case '6':
-            /* 切换计步器先显示 */
-            hal.report ^= PRINT_PEDO;
-            break;
-        case '7':
-            /* 重置计步器 */
-            dmp_set_pedometer_step_count(0);
-            dmp_set_pedometer_walk_time(0);
-            break;
-        case 'f':
-            if (hal.lp_accel_mode)
-                /* LP加速模式与DMP不兼容 */
-                return;
-            /* 切换DMP */
-            if (hal.dmp_on)
-            {
-                unsigned short dmp_rate;
-                unsigned char mask = 0;
-                hal.dmp_on = 0;
-                mpu_set_dmp_state(0);
-                /* 恢复FIFO设置 */
-                if (hal.sensors & ACCEL_ON)
-                    mask |= INV_XYZ_ACCEL;
-                if (hal.sensors & GYRO_ON)
-                    mask |= INV_XYZ_GYRO;
-                if (hal.sensors & COMPASS_ON)
-                    mask |= INV_XYZ_COMPASS;
-                mpu_configure_fifo(mask);
-                /* 使用DMP时，硬件采样率固定位200Hz，并且DMP配置为使用函数dmp_set_fifo_rate对FIFO输出进行降低采样率
-                   但是，当DMP关闭时，采样率保持在200Hz，可以在inv_mpu.c文件中进行处理，但需要引用inv_mpu_dmp_motion_driver.c
-                   为了避免这种情况，我们将额外的逻辑代码放在应用程序层中 */
-                dmp_get_fifo_rate(&dmp_rate);
-                mpu_set_sample_rate(dmp_rate);
-                inv_quaternion_sensor_was_turned_off();
-                MPL_LOGI("DMP disabled.\n");
-            }
-            else
-            {
-                unsigned short sample_rate;
-                hal.dmp_on = 1;
-                /* 保持当前FIFO速率 */
-                mpu_get_sample_rate(&sample_rate);
-                dmp_set_fifo_rate(sample_rate);
-                inv_set_quat_sample_rate(1000000L / sample_rate);
-                mpu_set_dmp_state(1);
-                MPL_LOGI("DMP enabled.\n");
-            }
-            break;
-        case 'm':
-            /* 测试运动中断硬件功能 */
-#ifndef MPU6050 // 不适用MPU6050产品
-            hal.motion_int_mode = 1;
-#endif
-            break;
+//     switch (c)
+//     {
+//         /* 这些命令用来关闭单个传感器 */
+//         case '8':
+//             hal.sensors ^= ACCEL_ON;
+//             setup_gyro();
+//             if (!(hal.sensors & ACCEL_ON))
+//                 inv_accel_was_turned_off();
+//             break;
+//         case '9':
+//             hal.sensors ^= GYRO_ON;
+//             setup_gyro();
+//             if (!(hal.sensors & GYRO_ON))
+//                 inv_gyro_was_turned_off();
+//             break;
+// #ifdef COMPASS_ENABLED
+//         case '0':
+//             hal.sensors ^= COMPASS_ON;
+//             setup_gyro();
+//             if (!(hal.sensors & COMPASS_ON))
+//                 inv_compass_was_turned_off();
+//             break;
+// #endif
+//         /* 这些命令将单个传感器数据或融合数据发送到PC上位机 */
+//         case 'a':
+//             hal.report ^= PRINT_ACCEL;
+//             break;
+//         case 'g':
+//             hal.report ^= PRINT_GYRO;
+//             break;
+// #ifdef COMPASS_ENABLED
+//         case 'c':
+//             hal.report ^= PRINT_COMPASS;
+//             break;
+// #endif
+//         case 'e':
+//             hal.report ^= PRINT_EULER;
+//             break;
+//         case 'r':
+//             hal.report ^= PRINT_ROT_MAT;
+//             break;
+//         case 'q':
+//             hal.report ^= PRINT_QUAT;
+//             break;
+//         case 'h':
+//             hal.report ^= PRINT_HEADING;
+//             break;
+//         case 'i':
+//             hal.report ^= PRINT_LINEAR_ACCEL;
+//             break;
+//         case 'o':
+//             hal.report ^= PRINT_GRAVITY_VECTOR;
+//             break;
+// #ifdef COMPASS_ENABLED
+//         case 'w':
+//             send_status_compass();
+//             break;
+// #endif
+//         /* 此命令打印出每个陀螺仪寄存器的值以进行调试。如果禁用日志记录，则此功能无效 */
+//         case 'd':
+//             mpu_reg_dump();
+//             break;
+//         /* 测试低功耗加速模式 */
+//         case 'p':
+//             if (hal.dmp_on)
+//                 /* LP加速模式与DMP不兼容 */
+//                 break;
+//             mpu_lp_accel_mode(20);
+//             /* 启用LP加速度模式时，驱动程序将自动为锁存的中断配置硬件，
+//             但是，MCU有时会错过上升/下降沿，并且永远不会设置hal.new_gyro标志。
+//             为避免锁定在这种状态下，我们覆盖了驱动程序的配置并坚持使用未锁定的中断模式 */
+//             /* 要求：MCU支持电平触发的中断 */
+//             mpu_set_int_latched(0);
+//             hal.sensors &= ~(GYRO_ON | COMPASS_ON);
+//             hal.sensors |= ACCEL_ON;
+//             hal.lp_accel_mode = 1;
+//             inv_gyro_was_turned_off();
+//             inv_compass_was_turned_off();
+//             break;
+//         /* 硬件自检可以在不完全与MPL交互的情况下运行，应为它完全位于陀螺仪驱动程序中
+//            假定已启用日志记录，否则，可以在此处使用几个LED来显示测试结果 */
+//         case 't':
+//             run_self_test();
+//             /* 告诉MPL传感器已关闭 */
+//             inv_accel_was_turned_off();
+//             inv_gyro_was_turned_off();
+//             inv_compass_was_turned_off();
+//             break;
+//         /* 根据你的程序，可能需要更改或更慢速率的传感器数据，这些命令可以加快或减慢将传感器数据推送到MPL的速度， */
+//         /* 在本示例中，指南针速率始终不变 */
+//         case '1':
+//             if (hal.dmp_on)
+//             {
+//                 dmp_set_fifo_rate(10);
+//                 inv_set_quat_sample_rate(100000L);
+//             }
+//             else
+//                 mpu_set_sample_rate(10);
+//             inv_set_gyro_sample_rate(100000L);
+//             inv_set_accel_sample_rate(100000L);
+//             break;
+//         case '2':
+//             if (hal.dmp_on)
+//             {
+//                 dmp_set_fifo_rate(20);
+//                 inv_set_quat_sample_rate(50000L);
+//             }
+//             else
+//                 mpu_set_sample_rate(20);
+//             inv_set_gyro_sample_rate(50000L);
+//             inv_set_accel_sample_rate(50000L);
+//             break;
+//         case '3':
+//             if (hal.dmp_on)
+//             {
+//                 dmp_set_fifo_rate(40);
+//                 inv_set_quat_sample_rate(25000L);
+//             }
+//             else
+//                 mpu_set_sample_rate(40);
+//             inv_set_gyro_sample_rate(25000L);
+//             inv_set_accel_sample_rate(25000L);
+//             break;
+//         case '4':
+//             if (hal.dmp_on)
+//             {
+//                 dmp_set_fifo_rate(50);
+//                 inv_set_quat_sample_rate(20000L);
+//             }
+//             else
+//                 mpu_set_sample_rate(50);
+//             inv_set_gyro_sample_rate(20000L);
+//             inv_set_accel_sample_rate(20000L);
+//             break;
+//         case '5':
+//             if (hal.dmp_on)
+//             {
+//                 dmp_set_fifo_rate(100);
+//                 inv_set_quat_sample_rate(10000L);
+//             }
+//             else
+//                 mpu_set_sample_rate(100);
+//             inv_set_gyro_sample_rate(10000L);
+//             inv_set_accel_sample_rate(10000L);
+//             break;
+//         case ',':
+//             /* 将硬件设置为仅在手势事件时中断，此功能对于保持MCU处于休眠状态，直到DMP检测到发生轻敲或定向事件为止 */
+//             dmp_set_interrupt_mode(DMP_INT_GESTURE);
+//             break;
+//         case '.':
+//             /* 将硬件设置为周期性中断 */
+//             dmp_set_interrupt_mode(DMP_INT_CONTINUOUS);
+//             break;
+//         case '6':
+//             /* 切换计步器先显示 */
+//             hal.report ^= PRINT_PEDO;
+//             break;
+//         case '7':
+//             /* 重置计步器 */
+//             dmp_set_pedometer_step_count(0);
+//             dmp_set_pedometer_walk_time(0);
+//             break;
+//         case 'f':
+//             if (hal.lp_accel_mode)
+//                 /* LP加速模式与DMP不兼容 */
+//                 return;
+//             /* 切换DMP */
+//             if (hal.dmp_on)
+//             {
+//                 unsigned short dmp_rate;
+//                 unsigned char mask = 0;
+//                 hal.dmp_on = 0;
+//                 mpu_set_dmp_state(0);
+//                 /* 恢复FIFO设置 */
+//                 if (hal.sensors & ACCEL_ON)
+//                     mask |= INV_XYZ_ACCEL;
+//                 if (hal.sensors & GYRO_ON)
+//                     mask |= INV_XYZ_GYRO;
+//                 if (hal.sensors & COMPASS_ON)
+//                     mask |= INV_XYZ_COMPASS;
+//                 mpu_configure_fifo(mask);
+//                 /* 使用DMP时，硬件采样率固定位200Hz，并且DMP配置为使用函数dmp_set_fifo_rate对FIFO输出进行降低采样率
+//                    但是，当DMP关闭时，采样率保持在200Hz，可以在inv_mpu.c文件中进行处理，但需要引用inv_mpu_dmp_motion_driver.c
+//                    为了避免这种情况，我们将额外的逻辑代码放在应用程序层中 */
+//                 dmp_get_fifo_rate(&dmp_rate);
+//                 mpu_set_sample_rate(dmp_rate);
+//                 inv_quaternion_sensor_was_turned_off();
+//                 MPL_LOGI("DMP disabled.\n");
+//             }
+//             else
+//             {
+//                 unsigned short sample_rate;
+//                 hal.dmp_on = 1;
+//                 /* 保持当前FIFO速率 */
+//                 mpu_get_sample_rate(&sample_rate);
+//                 dmp_set_fifo_rate(sample_rate);
+//                 inv_set_quat_sample_rate(1000000L / sample_rate);
+//                 mpu_set_dmp_state(1);
+//                 MPL_LOGI("DMP enabled.\n");
+//             }
+//             break;
+//         case 'm':
+//             /* 测试运动中断硬件功能 */
+// #ifndef MPU6050 // 不适用MPU6050产品
+//             hal.motion_int_mode = 1;
+// #endif
+//             break;
 
-        case 'v':
-            /* 切换LP四元数，可以在运行时启用/禁用DMP功能，对其它功能可以使用相同的方法 */
-            hal.dmp_features ^= DMP_FEATURE_6X_LP_QUAT;
-            dmp_enable_feature(hal.dmp_features);
-            if (!(hal.dmp_features & DMP_FEATURE_6X_LP_QUAT))
-            {
-                inv_quaternion_sensor_was_turned_off();
-                MPL_LOGI("LP quaternion disabled.\n");
-            }
-            else
-                MPL_LOGI("LP quaternion enabled.\n");
-            break;
-        default:
-            break;
-    }
-    hal.rx.cmd = 0;
-}
+//         case 'v':
+//             /* 切换LP四元数，可以在运行时启用/禁用DMP功能，对其它功能可以使用相同的方法 */
+//             hal.dmp_features ^= DMP_FEATURE_6X_LP_QUAT;
+//             dmp_enable_feature(hal.dmp_features);
+//             if (!(hal.dmp_features & DMP_FEATURE_6X_LP_QUAT))
+//             {
+//                 inv_quaternion_sensor_was_turned_off();
+//                 MPL_LOGI("LP quaternion disabled.\n");
+//             }
+//             else
+//                 MPL_LOGI("LP quaternion enabled.\n");
+//             break;
+//         default:
+//             break;
+//     }
+//     hal.rx.cmd = 0;
+// }
 
 /**********************************************
 函数名称：gyro_data_ready_cb
@@ -826,14 +828,14 @@ void gyro_data_ready_cb(void)
 }
 
 /**********************************************
-函数名称：DMP_Init
-函数功能：初始化DMP
-函数参数：无
+函数名称：HAL_GPIO_EXTI_Callback
+函数功能：中断回调函数
+函数参数：GPIO_Pin
 函数返回值：无
 **********************************************/
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-    if (GPIO_Pin == GPIO_PIN_1)
+    if (GPIO_Pin == EXIT_PIN_Pin)
     {
         gyro_data_ready_cb();
     }

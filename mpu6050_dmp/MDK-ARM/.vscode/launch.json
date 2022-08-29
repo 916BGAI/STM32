@@ -9,21 +9,9 @@
             "servertype": "jlink",
             "interface": "swd",
             "executable": "build\\mpu6050_dmp\\MDK-ARM.elf",
-            "runToMain": true,
-            "device": "STM32F103C8"
-        },
-        {
-            "cwd": "${workspaceRoot}",
-            "type": "cortex-debug",
-            "request": "launch",
-            "name": "openocd",
-            "servertype": "openocd",
-            "executable": "build\\mpu6050_dmp\\MDK-ARM.elf",
-            "runToMain": true,
-            "configFiles": [
-                "interface/stlink.cfg",
-                "target/stm32f1x.cfg"
-            ]
+            "runToEntryPoint": "main",
+            "device": "STM32F103C8",
+            "svdFile": "D:\\Code\\Keil_v5\\ARM\\Packs\\Keil\\STM32F1xx_DFP\\2.4.0\\SVD\\STM32F103xx.svd"
         }
     ]
 }

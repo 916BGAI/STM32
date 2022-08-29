@@ -17,8 +17,7 @@
 #include "mltypes.h"
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
     void inv_init_9x_fusion(void);
@@ -34,5 +33,6 @@ extern "C"
 #ifdef __cplusplus
 }
 #endif
+
 
 #endif // MLDMP_FUSION9AXIS_H__

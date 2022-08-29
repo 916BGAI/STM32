@@ -11,47 +11,48 @@
 
 #define GYRO_MAG_SQR_SHIFT 6
 #define NUM_ROTATION_MATRIX_ELEMENTS (9)
-#define ROT_MATRIX_SCALE_LONG (1073741824L)
+#define ROT_MATRIX_SCALE_LONG  (1073741824L)
 #define ROT_MATRIX_SCALE_FLOAT (1073741824.0f)
-#define ROT_MATRIX_LONG_TO_FLOAT(longval) \
-    ((float)((longval) / ROT_MATRIX_SCALE_FLOAT))
-#define SIGNM(k) ((int)(k)&1 ? -1 : 1)
+#define ROT_MATRIX_LONG_TO_FLOAT( longval ) \
+    ((float) ((longval) / ROT_MATRIX_SCALE_FLOAT ))
+#define SIGNM(k)((int)(k)&1?-1:1)
 #define SIGNSET(x) ((x) ? -1 : +1)
 
 #define INV_TWO_POWER_NEG_30 9.313225746154785e-010f
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
-    typedef struct
-    {
+     typedef struct {
         float state[4];
         float c[5];
         float input;
         float output;
-    } inv_biquad_filter_t;
+    }   inv_biquad_filter_t;
 
     static inline float inv_q30_to_float(long q30)
     {
-        return (float)q30 / ((float)(1L << 30));
+        return (float) q30 / ((float)(1L << 30));
     }
 
     static inline double inv_q30_to_double(long q30)
     {
-        return (double)q30 / ((double)(1L << 30));
+        return (double) q30 / ((double)(1L << 30));
     }
 
     static inline float inv_q16_to_float(long q16)
     {
-        return (float)q16 / (1L << 16);
+        return (float) q16 / (1L << 16);
     }
 
     static inline double inv_q16_to_double(long q16)
     {
-        return (double)q16 / (1L << 16);
+        return (double) q16 / (1L << 16);
     }
+
+
+
 
     long inv_q29_mult(long a, long b);
     long inv_q30_mult(long a, long b);
@@ -94,7 +95,7 @@ extern "C"
     void inv_convert_to_chip(unsigned short orientation, const long *input, long *output);
     void inv_convert_to_body_with_scale(unsigned short orientation, long sensitivity, const long *input, long *output);
     void inv_q_rotate(const long *q, const long *in, long *out);
-    void inv_vector_normalize(long *vec, int length);
+	void inv_vector_normalize(long *vec, int length);
     uint32_t inv_checksum(const unsigned char *str, int len);
     float inv_compass_angle(const long *compass, const long *grav,
                             const long *quat);
@@ -109,10 +110,10 @@ extern "C"
         return (long)((t1 - t2));
     }
 #else
-static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
-{
-    return (long)((t1 - t2) / 1000000L);
-}
+    static inline long inv_delta_time_ms(inv_time_t t1, inv_time_t t2)
+    {
+        return (long)((t1 - t2) / 1000000L);
+    }
 #endif
 
     double quaternion_to_rotation_angle(const long *quat);

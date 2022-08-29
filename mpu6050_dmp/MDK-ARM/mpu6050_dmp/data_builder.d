@@ -15,4 +15,6 @@ mpu6050_dmp/data_builder.o: \
   ..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h \
   ..\Drivers\MPU6050_Motion_Driver\driver\include\log.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h
+  D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\Drivers\RTT\RTT.h ..\Drivers\RTT\SEGGER_RTT.h \
+  ..\Drivers\RTT\SEGGER_RTT_Conf.h

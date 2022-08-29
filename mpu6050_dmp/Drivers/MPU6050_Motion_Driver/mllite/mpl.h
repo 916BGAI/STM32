@@ -10,13 +10,12 @@
 #define INV_MPL_H__
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
-    inv_error_t inv_init_mpl(void);
-    inv_error_t inv_start_mpl(void);
-    inv_error_t inv_get_version(char **version);
+inv_error_t inv_init_mpl(void);
+inv_error_t inv_start_mpl(void);
+inv_error_t inv_get_version(char **version);
 
 #ifdef __cplusplus
 }

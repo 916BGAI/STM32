@@ -5,6 +5,7 @@
  $
  */
 
+
 /******************************************************************************
  *
  * $Id$
@@ -16,8 +17,7 @@
 #include "mltypes.h"
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
     inv_error_t inv_enable_no_gyro_fusion(void);
@@ -29,5 +29,6 @@ extern "C"
 #ifdef __cplusplus
 }
 #endif
+
 
 #endif // MLDMP_NOGYROFUSION_H__
