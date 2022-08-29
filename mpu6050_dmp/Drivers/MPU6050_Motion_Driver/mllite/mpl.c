@@ -23,7 +23,7 @@
 #include "mlinclude.h"
 
 /**
- * @brief  Initializes the MPL. Should be called first and once
+ * @brief  Initializes the MPL. Should be called first and once 
  * @return Returns INV_SUCCESS if successful or an error code if not.
  */
 inv_error_t inv_init_mpl(void)
@@ -56,7 +56,7 @@ inv_error_t inv_get_version(char **version)
     return INV_SUCCESS;
 }
 
-/**
+/** 
  *  @brief  Starts the MPL. Typically called after inv_init_mpl() or after a
  *          inv_stop_mpl() to start the MPL back up an running.
  *  @return INV_SUCCESS if successful or a non-zero error code otherwise.

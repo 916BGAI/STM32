@@ -10,7 +10,6 @@
       <TargetName>mpu6050_dmp</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pArmCC>6180000::V6.18::ARMCLANG</pArmCC>
       <pCCUsed>6180000::V6.18::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
@@ -19,7 +18,7 @@
           <Vendor>STMicroelectronics</Vendor>
           <PackID>Keil.STM32F1xx_DFP.2.4.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
-          <Cpu>IRAM(0x20000000-0x20004FFF) IROM(0x8000000-0x800FFFF) CLOCK(8000000) CPUTYPE("Cortex-M3") TZ</Cpu>
+          <Cpu>IRAM(0x20000000-0x20004FFF) IROM(0x8000000-0x800FFFF)  CLOCK(8000000) CPUTYPE("Cortex-M3") TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
           <FlashDriverDll></FlashDriverDll>
@@ -191,7 +190,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>1</useUlib>
+            <useUlib>0</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -339,9 +338,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER,STM32F103xB,EMPL_TARGET_STM32F1,EMPL,MPL_LOG_NDEBUG = 0,MPU6050,USE_DMP,REMOVE_LOGGING</Define>
+              <Define>USE_HAL_DRIVER,STM32F103xB,EMPL,MPL_LOG_NDEBUG=0,MPU6050,USE_DMP,REMOVE_LOGGING,EMPL_TARGET_STM32F1</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/MPU6050_Motion_Driver/driver/eMPL;../Drivers/MPU6050_Motion_Driver/driver/include;../Drivers/MPU6050_Motion_Driver/driver/stm32L;../Drivers/MPU6050_Motion_Driver/eMPL-hal;../Drivers/MPU6050_Motion_Driver/mllite;../Drivers/MPU6050_Motion_Driver/mpl;../Drivers/MPU6050_Motion_Driver/porting</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Drivers/RTT;../Drivers/MPU6050_Motion_Driver/driver/eMPL;../Drivers/MPU6050_Motion_Driver/driver/include;../Drivers/MPU6050_Motion_Driver/eMPL-hal;../Drivers/MPU6050_Motion_Driver/mllite;../Drivers/MPU6050_Motion_Driver/mpl;../Drivers/MPU6050_Motion_Driver/porting</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -409,11 +408,57 @@
               <FileName>i2c.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/i2c.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/usart.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>1</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
             </File>
             <File>
               <FileName>stm32f1xx_it.c</FileName>
@@ -439,6 +484,57 @@
               <FileName>stm32f1xx_hal_i2c.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>1</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <uGnu>2</uGnu>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
             </File>
             <File>
               <FileName>stm32f1xx_hal.c</FileName>
@@ -500,11 +596,6 @@
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c</FilePath>
             </File>
-            <File>
-              <FileName>stm32f1xx_hal_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -518,92 +609,52 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Drivers/MPU6050_Motion_Driver/driver/eMPL</GroupName>
+          <GroupName>Drivers/RTT</GroupName>
           <Files>
             <File>
-              <FileName>dmpKey.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\eMPL\dmpKey.h</FilePath>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\RTT\SEGGER_RTT.c</FilePath>
             </File>
             <File>
-              <FileName>dmpmap.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\eMPL\dmpmap.h</FilePath>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\RTT\SEGGER_RTT_printf.c</FilePath>
             </File>
+            <File>
+              <FileName>SEGGER_RTT_Syscalls_GCC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\RTT\SEGGER_RTT_Syscalls_GCC.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_Syscalls_IAR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\RTT\SEGGER_RTT_Syscalls_IAR.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_Syscalls_KEIL.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\RTT\SEGGER_RTT_Syscalls_KEIL.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_Syscalls_SES.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\RTT\SEGGER_RTT_Syscalls_SES.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers/MPU6050_Motion_Driver/driver/eMPL</GroupName>
+          <Files>
             <File>
               <FileName>inv_mpu.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.c</FilePath>
             </File>
             <File>
-              <FileName>inv_mpu.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.h</FilePath>
-            </File>
-            <File>
               <FileName>inv_mpu_dmp_motion_driver.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.c</FilePath>
-            </File>
-            <File>
-              <FileName>inv_mpu_dmp_motion_driver.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Drivers/MPU6050_Motion_Driver/driver/include</GroupName>
-          <Files>
-            <File>
-              <FileName>log.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\include\log.h</FilePath>
-            </File>
-            <File>
-              <FileName>mlinclude.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\include\mlinclude.h</FilePath>
-            </File>
-            <File>
-              <FileName>mlmath.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\include\mlmath.h</FilePath>
-            </File>
-            <File>
-              <FileName>mlos.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\include\mlos.h</FilePath>
-            </File>
-            <File>
-              <FileName>mltypes.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\include\mltypes.h</FilePath>
-            </File>
-            <File>
-              <FileName>mpu.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\include\mpu.h</FilePath>
-            </File>
-            <File>
-              <FileName>stdint_invensense.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\include\stdint_invensense.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Drivers/MPU6050_Motion_Driver/driver/stm32L</GroupName>
-          <Files>
-            <File>
-              <FileName>log_stm32.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\stm32L\log_stm32.c</FilePath>
-            </File>
-            <File>
-              <FileName>packet.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\driver\stm32L\packet.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -614,11 +665,6 @@
               <FileName>eMPL_outputs.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\MPU6050_Motion_Driver\eMPL-hal\eMPL_outputs.c</FilePath>
-            </File>
-            <File>
-              <FileName>eMPL_outputs.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\eMPL-hal\eMPL_outputs.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -631,24 +677,9 @@
               <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.c</FilePath>
             </File>
             <File>
-              <FileName>data_builder.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h</FilePath>
-            </File>
-            <File>
               <FileName>hal_outputs.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\hal_outputs.c</FilePath>
-            </File>
-            <File>
-              <FileName>hal_outputs.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\hal_outputs.h</FilePath>
-            </File>
-            <File>
-              <FileName>invensense.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\invensense.h</FilePath>
             </File>
             <File>
               <FileName>message_layer.c</FileName>
@@ -656,19 +687,9 @@
               <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.c</FilePath>
             </File>
             <File>
-              <FileName>message_layer.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\message_layer.h</FilePath>
-            </File>
-            <File>
               <FileName>ml_math_func.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.c</FilePath>
-            </File>
-            <File>
-              <FileName>ml_math_func.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\ml_math_func.h</FilePath>
             </File>
             <File>
               <FileName>mlmath.c</FileName>
@@ -681,19 +702,9 @@
               <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\mpl.c</FilePath>
             </File>
             <File>
-              <FileName>mpl.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\mpl.h</FilePath>
-            </File>
-            <File>
               <FileName>results_holder.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.c</FilePath>
-            </File>
-            <File>
-              <FileName>results_holder.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\results_holder.h</FilePath>
             </File>
             <File>
               <FileName>start_manager.c</FileName>
@@ -701,85 +712,15 @@
               <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.c</FilePath>
             </File>
             <File>
-              <FileName>start_manager.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\start_manager.h</FilePath>
-            </File>
-            <File>
               <FileName>storage_manager.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.c</FilePath>
-            </File>
-            <File>
-              <FileName>storage_manager.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mllite\storage_manager.h</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Drivers/MPU6050_Motion_Driver/mpl</GroupName>
           <Files>
-            <File>
-              <FileName>accel_auto_cal.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\accel_auto_cal.h</FilePath>
-            </File>
-            <File>
-              <FileName>compass_vec_cal.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\compass_vec_cal.h</FilePath>
-            </File>
-            <File>
-              <FileName>fast_no_motion.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\fast_no_motion.h</FilePath>
-            </File>
-            <File>
-              <FileName>fusion_9axis.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\fusion_9axis.h</FilePath>
-            </File>
-            <File>
-              <FileName>gyro_tc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\gyro_tc.h</FilePath>
-            </File>
-            <File>
-              <FileName>heading_from_gyro.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\heading_from_gyro.h</FilePath>
-            </File>
-            <File>
-              <FileName>inv_math.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\inv_math.h</FilePath>
-            </File>
-            <File>
-              <FileName>invensense_adv.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\invensense_adv.h</FilePath>
-            </File>
-            <File>
-              <FileName>mag_disturb.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\mag_disturb.h</FilePath>
-            </File>
-            <File>
-              <FileName>motion_no_motion.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\motion_no_motion.h</FilePath>
-            </File>
-            <File>
-              <FileName>no_gyro_fusion.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\no_gyro_fusion.h</FilePath>
-            </File>
-            <File>
-              <FileName>quaternion_supervisor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\mpl\quaternion_supervisor.h</FilePath>
-            </File>
             <File>
               <FileName>libmpllib.lib</FileName>
               <FileType>4</FileType>
@@ -791,24 +732,14 @@
           <GroupName>Drivers/MPU6050_Motion_Driver/porting</GroupName>
           <Files>
             <File>
-              <FileName>STM32F1_porting.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.c</FilePath>
-            </File>
-            <File>
-              <FileName>STM32F1_porting.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h</FilePath>
-            </File>
-            <File>
               <FileName>MPU6050.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\MPU6050_Motion_Driver\porting\MPU6050.c</FilePath>
             </File>
             <File>
-              <FileName>MPU6050.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\MPU6050_Motion_Driver\porting\MPU6050.h</FilePath>
+              <FileName>STM32F1_porting.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.c</FilePath>
             </File>
           </Files>
         </Group>

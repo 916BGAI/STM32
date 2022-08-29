@@ -17,8 +17,7 @@
 #include "mltypes.h"
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
     inv_error_t inv_enable_fast_nomot(void);
@@ -42,4 +41,6 @@ extern "C"
 }
 #endif
 
+
 #endif // MLDMP_FAST_NO_MOTION_H__
+

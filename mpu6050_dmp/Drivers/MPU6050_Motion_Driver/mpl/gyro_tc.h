@@ -17,27 +17,27 @@
 #include "mltypes.h"
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
-    inv_error_t inv_enable_gyro_tc(void);
-    inv_error_t inv_disable_gyro_tc(void);
-    inv_error_t inv_start_gyro_tc(void);
-    inv_error_t inv_stop_gyro_tc(void);
+inv_error_t inv_enable_gyro_tc(void);
+inv_error_t inv_disable_gyro_tc(void);
+inv_error_t inv_start_gyro_tc(void);
+inv_error_t inv_stop_gyro_tc(void);
 
-    inv_error_t inv_get_gyro_ts(long *data);
-    inv_error_t inv_set_gyro_ts(long *data);
+inv_error_t inv_get_gyro_ts(long *data);
+inv_error_t inv_set_gyro_ts(long *data);
 
-    inv_error_t inv_init_gyro_ts(void);
+inv_error_t inv_init_gyro_ts(void);
 
-    inv_error_t inv_set_gtc_max_temp(long data);
-    inv_error_t inv_set_gtc_min_temp(long data);
+inv_error_t inv_set_gtc_max_temp(long data);
+inv_error_t inv_set_gtc_min_temp(long data);
 
-    inv_error_t inv_print_gtc_data(void);
+inv_error_t inv_print_gtc_data(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* _GYRO_TC_H */
+#endif  /* _GYRO_TC_H */
+

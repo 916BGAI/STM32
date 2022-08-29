@@ -11,12 +11,11 @@
 #include "mltypes.h"
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
     int inv_check_magnetic_disturbance(unsigned long delta_time, const long *quat,
-                                       const long *compass, const long *gravity);
+        const long *compass, const long *gravity);
 
     void inv_track_dip_angle(int mode, float currdip);
 
@@ -33,5 +32,6 @@ extern "C"
 #ifdef __cplusplus
 }
 #endif
+
 
 #endif // MLDMP_MAGDISTURB_H__

@@ -7,6 +7,7 @@
     "settings": {
         "files.autoGuessEncoding": true,
         "C_Cpp.default.configurationProvider": "cl.eide",
+        "C_Cpp.errorSquiggles": "Disabled",
         "files.associations": {
             ".eideignore": "ignore",
             "*.h": "c",
@@ -16,8 +17,7 @@
             "*.c++": "cpp",
             "*.cpp": "cpp",
             "*.cxx": "cpp",
-            "*.cc": "cpp",
-            "*.lib": "c"
+            "*.cc": "cpp"
         },
         "[yaml]": {
             "editor.insertSpaces": true,
@@ -33,17 +33,9 @@
             "hars.cppsnippets",
             "zixuanwang.linkerscript",
             "redhat.vscode-yaml",
+            "IBM.output-colorizer",
             "dan-c-underwood.arm",
-            "zixuanwang.linkerscript",
             "marus25.cortex-debug"
         ]
-    },
-    "launch": {
-        "configurations": [],
-        "compounds": []
-    },
-    "tasks": {
-        "version": "2.0.0",
-        "tasks": []
     }
 }

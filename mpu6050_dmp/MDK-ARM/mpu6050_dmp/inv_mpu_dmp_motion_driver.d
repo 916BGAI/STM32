@@ -9,7 +9,6 @@ mpu6050_dmp/inv_mpu_dmp_motion_driver.o: \
   ..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.h \
   ..\Drivers\MPU6050_Motion_Driver\driver\eMPL\dmpKey.h \
   ..\Drivers\MPU6050_Motion_Driver\driver\eMPL\dmpmap.h \
-  ..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h \
   ..\Core\Inc\i2c.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Core\Inc\stm32f1xx_hal_conf.h \
@@ -37,4 +36,4 @@ mpu6050_dmp/inv_mpu_dmp_motion_driver.o: \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
-  ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h
+  ..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h

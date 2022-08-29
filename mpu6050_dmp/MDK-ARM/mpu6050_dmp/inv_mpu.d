@@ -6,7 +6,6 @@ mpu6050_dmp/inv_mpu.o: \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
   ..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.h \
-  ..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h \
   ..\Core\Inc\i2c.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Core\Inc\stm32f1xx_hal_conf.h \
@@ -34,6 +33,8 @@ mpu6050_dmp/inv_mpu.o: \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
-  ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
   ..\Drivers\MPU6050_Motion_Driver\driver\include\log.h \
-  D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h
+  D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\Drivers\RTT\RTT.h ..\Drivers\RTT\SEGGER_RTT.h \
+  ..\Drivers\RTT\SEGGER_RTT_Conf.h \
+  ..\Drivers\MPU6050_Motion_Driver\porting\STM32F1_porting.h

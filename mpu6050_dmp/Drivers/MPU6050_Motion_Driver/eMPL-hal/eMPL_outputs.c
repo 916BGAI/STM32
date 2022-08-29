@@ -21,8 +21,7 @@
 #include "data_builder.h"
 #include "results_holder.h"
 
-struct eMPL_output_s
-{
+struct eMPL_output_s {
     long quat[4];
     int quat_accuracy;
     int gyro_status;
@@ -59,7 +58,7 @@ int inv_get_sensor_type_accel(long *data, int8_t *accuracy, inv_time_t *timestam
  *  @param[out] accuracy    Accuracy of the measurement from 0 (least accurate)
  *                          to 3 (most accurate).
  *  @param[out] timestamp   The time in milliseconds when this sensor was read.
- *  @return     1 if data was updated.
+ *  @return     1 if data was updated. 
  */
 int inv_get_sensor_type_gyro(long *data, int8_t *accuracy, inv_time_t *timestamp)
 {
@@ -76,7 +75,7 @@ int inv_get_sensor_type_gyro(long *data, int8_t *accuracy, inv_time_t *timestamp
  *  @param[out] accuracy    Accuracy of the measurement from 0 (least accurate)
  *                          to 3 (most accurate).
  *  @param[out] timestamp   The time in milliseconds when this sensor was read.
- *  @return     1 if data was updated.
+ *  @return     1 if data was updated. 
  */
 int inv_get_sensor_type_compass(long *data, int8_t *accuracy, inv_time_t *timestamp)
 {
@@ -94,7 +93,7 @@ int inv_get_sensor_type_compass(long *data, int8_t *accuracy, inv_time_t *timest
  *  @param[out] accuracy    Accuracy of the measurement from 0 (least accurate)
  *                          to 3 (most accurate).
  *  @param[out] timestamp   The time in milliseconds when this sensor was read.
- *  @return     1 if data was updated.
+ *  @return     1 if data was updated. 
  */
 int inv_get_sensor_type_quat(long *data, int8_t *accuracy, inv_time_t *timestamp)
 {
@@ -110,7 +109,7 @@ int inv_get_sensor_type_quat(long *data, int8_t *accuracy, inv_time_t *timestamp
  *  @param[out] accuracy    Accuracy of the measurement from 0 (least accurate)
  *                          to 3 (most accurate).
  *  @param[out] timestamp   The time in milliseconds when this sensor was read.
- *  @return     1 if data was updated.
+ *  @return     1 if data was updated. 
  */
 int inv_get_sensor_type_heading(long *data, int8_t *accuracy, inv_time_t *timestamp)
 {
@@ -127,7 +126,7 @@ int inv_get_sensor_type_heading(long *data, int8_t *accuracy, inv_time_t *timest
 
     /* Y component of the Ybody axis in World frame */
     t2 = q22 + q00 - (1L << 30);
-    fdata = atan2f((float)t1, (float)t2) * 180.f / (float)M_PI;
+    fdata = atan2f((float) t1, (float) t2) * 180.f / (float) M_PI;
     if (fdata < 0.f)
         fdata += 360.f;
     data[0] = (long)(fdata * 65536.f);
@@ -171,19 +170,17 @@ int inv_get_sensor_type_euler(long *data, int8_t *accuracy, inv_time_t *timestam
 
     /* Y component of the Ybody axis in World frame */
     t2 = q22 + q00 - (1L << 30);
-    values[2] = -atan2f((float)t1, (float)t2) * 180.f / (float)M_PI;
+    values[2] = -atan2f((float) t1, (float) t2) * 180.f / (float) M_PI;
 
     /* Z component of the Ybody axis in World frame */
     t3 = q23 + q01;
     values[0] =
-        atan2f((float)t3,
-               sqrtf((float)t1 * t1 +
-                     (float)t2 * t2)) *
-        180.f / (float)M_PI;
+        atan2f((float) t3,
+                sqrtf((float) t1 * t1 +
+                      (float) t2 * t2)) * 180.f / (float) M_PI;
     /* Z component of the Zbody axis in World frame */
     t2 = q33 + q00 - (1L << 30);
-    if (t2 < 0)
-    {
+    if (t2 < 0) {
         if (values[0] >= 0)
             values[0] = 180.f - values[0];
         else
@@ -199,8 +196,7 @@ int inv_get_sensor_type_euler(long *data, int8_t *accuracy, inv_time_t *timestam
 
     values[1] =
         (atan2f((float)(q33 + q00 - (1L << 30)), (float)(q13 - q02)) *
-             180.f / (float)M_PI -
-         90);
+          180.f / (float) M_PI - 90);
     if (values[1] >= 90)
         values[1] = 180 - values[1];
 
@@ -231,7 +227,8 @@ int inv_get_sensor_type_rot_mat(long *data, int8_t *accuracy, inv_time_t *timest
     return eMPL_out.nine_axis_status;
 }
 
-static inv_error_t inv_generate_eMPL_outputs(struct inv_sensor_cal_t *sensor_cal)
+static inv_error_t inv_generate_eMPL_outputs
+    (struct inv_sensor_cal_t *sensor_cal)
 {
     int use_sensor;
     long sr = 1000;
@@ -239,57 +236,53 @@ static inv_error_t inv_generate_eMPL_outputs(struct inv_sensor_cal_t *sensor_cal
     eMPL_out.gyro_status = sensor_cal->gyro.status;
     eMPL_out.accel_status = sensor_cal->accel.status;
     eMPL_out.compass_status = sensor_cal->compass.status;
-
+    
     /* Find the highest sample rate and tie sensor fusion timestamps to that one. */
-    if (sensor_cal->gyro.status & INV_SENSOR_ON)
-    {
+    if (sensor_cal->gyro.status & INV_SENSOR_ON) {
         sr = sensor_cal->gyro.sample_rate_ms;
         use_sensor = 0;
     }
-    if ((sensor_cal->accel.status & INV_SENSOR_ON) && (sr > sensor_cal->accel.sample_rate_ms))
-    {
+    if ((sensor_cal->accel.status & INV_SENSOR_ON) && (sr > sensor_cal->accel.sample_rate_ms)) {
         sr = sensor_cal->accel.sample_rate_ms;
         use_sensor = 1;
     }
-    if ((sensor_cal->compass.status & INV_SENSOR_ON) && (sr > sensor_cal->compass.sample_rate_ms))
-    {
+    if ((sensor_cal->compass.status & INV_SENSOR_ON) && (sr > sensor_cal->compass.sample_rate_ms)) {
         sr = sensor_cal->compass.sample_rate_ms;
         use_sensor = 2;
     }
-    if ((sensor_cal->quat.status & INV_SENSOR_ON) && (sr > sensor_cal->quat.sample_rate_ms))
-    {
+    if ((sensor_cal->quat.status & INV_SENSOR_ON) && (sr > sensor_cal->quat.sample_rate_ms)) {
         sr = sensor_cal->quat.sample_rate_ms;
         use_sensor = 3;
     }
 
-    switch (use_sensor)
-    {
-        default:
-        case 0:
-            eMPL_out.nine_axis_status = (sensor_cal->gyro.status & INV_NEW_DATA) ? 1 : 0;
-            eMPL_out.nine_axis_timestamp = sensor_cal->gyro.timestamp;
-            break;
-        case 1:
-            eMPL_out.nine_axis_status = (sensor_cal->accel.status & INV_NEW_DATA) ? 1 : 0;
-            eMPL_out.nine_axis_timestamp = sensor_cal->accel.timestamp;
-            break;
-        case 2:
-            eMPL_out.nine_axis_status = (sensor_cal->compass.status & INV_NEW_DATA) ? 1 : 0;
-            eMPL_out.nine_axis_timestamp = sensor_cal->compass.timestamp;
-            break;
-        case 3:
-            eMPL_out.nine_axis_status = (sensor_cal->quat.status & INV_NEW_DATA) ? 1 : 0;
-            eMPL_out.nine_axis_timestamp = sensor_cal->quat.timestamp;
-            break;
+    switch (use_sensor) {
+    default:
+    case 0:
+        eMPL_out.nine_axis_status = (sensor_cal->gyro.status & INV_NEW_DATA) ? 1 : 0;
+        eMPL_out.nine_axis_timestamp = sensor_cal->gyro.timestamp;
+        break;
+    case 1:
+        eMPL_out.nine_axis_status = (sensor_cal->accel.status & INV_NEW_DATA) ? 1 : 0;
+        eMPL_out.nine_axis_timestamp = sensor_cal->accel.timestamp;
+        break;
+    case 2:
+        eMPL_out.nine_axis_status = (sensor_cal->compass.status & INV_NEW_DATA) ? 1 : 0;
+        eMPL_out.nine_axis_timestamp = sensor_cal->compass.timestamp;
+        break;
+    case 3:
+        eMPL_out.nine_axis_status = (sensor_cal->quat.status & INV_NEW_DATA) ? 1 : 0;
+        eMPL_out.nine_axis_timestamp = sensor_cal->quat.timestamp;
+        break;
     }
-
+    
+    
     return INV_SUCCESS;
 }
 
 static inv_error_t inv_start_eMPL_outputs(void)
 {
     return inv_register_data_cb(inv_generate_eMPL_outputs,
-                                INV_PRIORITY_EMPL_OUTPUTS, INV_GYRO_NEW | INV_ACCEL_NEW | INV_MAG_NEW);
+        INV_PRIORITY_HAL_OUTPUTS, INV_GYRO_NEW | INV_ACCEL_NEW | INV_MAG_NEW);
 }
 
 static inv_error_t inv_stop_eMPL_outputs(void)

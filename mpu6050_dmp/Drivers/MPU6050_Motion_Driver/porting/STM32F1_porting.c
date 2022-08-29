@@ -83,8 +83,3 @@ inline void get_ms_user(unsigned long *count) //换壳函数  inline修饰（内
 {
     *count = HAL_GetTick();
 }
-/**
- * @brief  Manages error callback by re-initializing I2C.
- * @param  Addr: I2C Address
- * @retval None
- */

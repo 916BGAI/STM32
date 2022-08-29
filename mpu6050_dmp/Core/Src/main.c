@@ -19,12 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
-#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <stdio.h>
+#include "RTT.h"
 #include "MPU6050.h"
 
 /* USER CODE END Includes */
@@ -89,34 +88,21 @@ int main(void)
     /* Initialize all configured peripherals */
     MX_GPIO_Init();
     MX_I2C1_Init();
-    MX_I2C2_Init();
-    MX_USART2_UART_Init();
     /* USER CODE BEGIN 2 */
-     int16_t acc_x, acc_y, acc_z;
-    //long Temp;
-     int temp;
-     int16_t gy_x, gy_y, gy_z;
     float Pitch, Roll, Yaw;
-    // MPU6050_Init();
+    long Temp;
+
     DMP_Init();
+
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1)
     {
-        // printf("%d", flag);
-
-         MPU_Get_Accelerometer(&acc_x, &acc_y, &acc_z);
-         temp = MPU_Get_Temperature();
-         MPU_Get_Gyroscope(&gy_x, &gy_y, &gy_z);
-          printf("acc_x=%d,acc_y=%d,acc_z=%d,temp=%d,gy_x=%d,gy_y=%d,gy_z=%d\r\n", acc_x, acc_y, acc_z, temp, gy_x, gy_y, gy_z);
-        // printf("pitch=%f,roll=%f,yaw=%f\r\n", pitch, roll, yaw);
-        // HAL_Delay(200);
-        //MPU6050_Get_Euler_Temputer(&Pitch, &Roll, &Yaw, &Temp);
-        //printf("Pitch=%f,Roll=%f,Yaw=%f\r\n", Pitch, Roll, Yaw);
+        MPU6050_Get_Euler_Temputer(&Pitch, &Roll, &Yaw, &Temp);
+        LOG("Pitch=%f,Roll=%f,Yaw=%f\r\n", Pitch, Roll, Yaw);
         HAL_Delay(100);
-
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */

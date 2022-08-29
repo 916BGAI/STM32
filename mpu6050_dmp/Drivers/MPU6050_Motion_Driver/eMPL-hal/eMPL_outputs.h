@@ -19,8 +19,7 @@
 #include "mltypes.h"
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
     int inv_get_sensor_type_accel(long *data, int8_t *accuracy, inv_time_t *timestamp);
@@ -38,7 +37,7 @@ extern "C"
 }
 #endif
 
-#endif /* #ifndef _EMPL_OUTPUTS_H_ */
+#endif  /* #ifndef _EMPL_OUTPUTS_H_ */
 
 /**
  *  @}

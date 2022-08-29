@@ -3,7 +3,6 @@
 
 #include "main.h"
 #include "i2c.h"
-#include "usart.h"
 #include "gpio.h"
 #include "inv_mpu.h"
 #include "inv_mpu_dmp_motion_driver.h"
@@ -11,7 +10,6 @@
 #include "mltypes.h"
 #include "mpu.h"
 #include "log.h"
-#include "packet.h"
 #include "mpl.h"
 #include "data_builder.h"
 #include "invensense_adv.h"

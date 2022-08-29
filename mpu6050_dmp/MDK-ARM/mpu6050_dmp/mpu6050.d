@@ -27,8 +27,7 @@ mpu6050_dmp/mpu6050.o: ..\Drivers\MPU6050_Motion_Driver\porting\MPU6050.c \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
-  ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
-  ..\Core\Inc\i2c.h ..\Core\Inc\usart.h ..\Core\Inc\gpio.h \
+  ..\Core\Inc\i2c.h ..\Core\Inc\gpio.h \
   ..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu.h \
   ..\Drivers\MPU6050_Motion_Driver\driver\eMPL\inv_mpu_dmp_motion_driver.h \
   ..\Drivers\MPU6050_Motion_Driver\eMPL-hal\eMPL_outputs.h \
@@ -41,7 +40,8 @@ mpu6050_dmp/mpu6050.o: ..\Drivers\MPU6050_Motion_Driver\porting\MPU6050.c \
   ..\Drivers\MPU6050_Motion_Driver\driver\include\log.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   D:\Code\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
-  ..\Drivers\MPU6050_Motion_Driver\driver\stm32L\packet.h \
+  ..\Drivers\RTT\RTT.h ..\Drivers\RTT\SEGGER_RTT.h \
+  ..\Drivers\RTT\SEGGER_RTT_Conf.h \
   ..\Drivers\MPU6050_Motion_Driver\mllite\mpl.h \
   ..\Drivers\MPU6050_Motion_Driver\mllite\data_builder.h \
   ..\Drivers\MPU6050_Motion_Driver\mpl\invensense_adv.h \

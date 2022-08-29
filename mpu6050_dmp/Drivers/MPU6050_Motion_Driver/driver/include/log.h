@@ -39,12 +39,13 @@
 
 #include <stdlib.h>
 #include <stdarg.h>
+#include "RTT.h"
 
 #ifdef ANDROID
 #ifdef NDK_BUILD
 #include "log_macros.h"
 #else
-#include <utils/Log.h> /* For the LOG macro */
+#include <utils/Log.h>		/* For the LOG macro */
 #endif
 #endif
 
@@ -53,8 +54,7 @@
 #endif
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 #if defined ANDROID_JELLYBEAN
@@ -81,24 +81,25 @@ extern "C"
 #define MPL_LOG_UNKNOWN MPL_LOG_VERBOSE
 #define MPL_LOG_DEFAULT KERN_DEFAULT
 #define MPL_LOG_VERBOSE KERN_CONT
-#define MPL_LOG_DEBUG KERN_NOTICE
-#define MPL_LOG_INFO KERN_INFO
-#define MPL_LOG_WARN KERN_WARNING
-#define MPL_LOG_ERROR KERN_ERR
-#define MPL_LOG_SILENT MPL_LOG_VERBOSE
+#define MPL_LOG_DEBUG   KERN_NOTICE
+#define MPL_LOG_INFO    KERN_INFO
+#define MPL_LOG_WARN    KERN_WARNING
+#define MPL_LOG_ERROR   KERN_ERR
+#define MPL_LOG_SILENT  MPL_LOG_VERBOSE
 
 #else
-/* Based off the log priorities in android
-   /system/core/include/android/log.h */
-#define MPL_LOG_UNKNOWN (0)
-#define MPL_LOG_DEFAULT (1)
-#define MPL_LOG_VERBOSE (2)
-#define MPL_LOG_DEBUG (3)
-#define MPL_LOG_INFO (4)
-#define MPL_LOG_WARN (5)
-#define MPL_LOG_ERROR (6)
-#define MPL_LOG_SILENT (8)
+	/* Based off the log priorities in android
+	   /system/core/include/android/log.h */
+#define MPL_LOG_UNKNOWN		(0)
+#define MPL_LOG_DEFAULT		(1)
+#define MPL_LOG_VERBOSE		(2)
+#define MPL_LOG_DEBUG		(3)
+#define MPL_LOG_INFO		(4)
+#define MPL_LOG_WARN		(5)
+#define MPL_LOG_ERROR		(6)
+#define MPL_LOG_SILENT		(8)
 #endif
+
 
 /*
  * This is the local tag used for the following simplified
@@ -121,19 +122,18 @@ extern "C"
 #ifndef MPL_LOGV
 #if MPL_LOG_NDEBUG
 #ifdef _WIN32
-#define MPL_LOGV(fmt, ...)                                         \
-    do                                                             \
-    {                                                              \
-        __pragma(warning(suppress : 4127)) if (0)                  \
-            MPL_LOG(LOG_VERBOSE, MPL_LOG_TAG, fmt, ##__VA_ARGS__); \
-        __pragma(warning(suppress : 4127))                         \
+#define MPL_LOGV(fmt, ...)						\
+	do {								\
+        __pragma (warning(suppress : 4127 )) \
+		if (0)							\
+			MPL_LOG(LOG_VERBOSE, MPL_LOG_TAG, fmt, ##__VA_ARGS__);\
+            __pragma (warning(suppress : 4127 )) \
     } while (0)
 #else
-#define MPL_LOGV(fmt, ...)                                         \
-    do                                                             \
-    {                                                              \
-        if (0)                                                     \
-            MPL_LOG(LOG_VERBOSE, MPL_LOG_TAG, fmt, ##__VA_ARGS__); \
+#define MPL_LOGV(fmt, ...)						\
+	do {								\
+		if (0)							\
+			MPL_LOG(LOG_VERBOSE, MPL_LOG_TAG, fmt, ##__VA_ARGS__);\
     } while (0)
 #endif
 
@@ -143,21 +143,18 @@ extern "C"
 #endif
 
 #ifndef CONDITION
-#define CONDITION(cond) ((cond) != 0)
+#define CONDITION(cond)     ((cond) != 0)
 #endif
 
 #ifndef MPL_LOGV_IF
 #if MPL_LOG_NDEBUG
-#define MPL_LOGV_IF(cond, fmt, ...)         \
-    do                                      \
-    {                                       \
-        if (0) MPL_LOG(fmt, ##__VA_ARGS__); \
-    } while (0)
+#define MPL_LOGV_IF(cond, fmt, ...)  \
+	do { if (0) MPL_LOG(fmt, ##__VA_ARGS__); } while (0)
 #else
-#define MPL_LOGV_IF(cond, fmt, ...)                              \
-    ((CONDITION(cond))                                           \
-         ? MPL_LOG(LOG_VERBOSE, MPL_LOG_TAG, fmt, ##__VA_ARGS__) \
-         : (void)0)
+#define MPL_LOGV_IF(cond, fmt, ...) \
+	((CONDITION(cond))						\
+		? MPL_LOG(LOG_VERBOSE, MPL_LOG_TAG, fmt, ##__VA_ARGS__) \
+		: (void)0)
 #endif
 #endif
 
@@ -169,10 +166,10 @@ extern "C"
 #endif
 
 #ifndef MPL_LOGD_IF
-#define MPL_LOGD_IF(cond, fmt, ...)                            \
-    ((CONDITION(cond))                                         \
-         ? MPL_LOG(LOG_DEBUG, MPL_LOG_TAG, fmt, ##__VA_ARGS__) \
-         : (void)0)
+#define MPL_LOGD_IF(cond, fmt, ...) \
+	((CONDITION(cond))					       \
+		? MPL_LOG(LOG_DEBUG, MPL_LOG_TAG, fmt, ##__VA_ARGS__)  \
+		: (void)0)
 #endif
 
 /*
@@ -182,15 +179,15 @@ extern "C"
 #ifdef __KERNEL__
 #define MPL_LOGI(fmt, ...) pr_info(KERN_INFO MPL_LOG_TAG fmt, ##__VA_ARGS__)
 #else
-#define MPL_LOGI(fmt, ...) MPL_LOG(LOG_INFO, MPL_LOG_TAG, fmt, ##__VA_ARGS__)
+#define MPL_LOGI LOGI
 #endif
 #endif
 
 #ifndef MPL_LOGI_IF
-#define MPL_LOGI_IF(cond, fmt, ...)                           \
-    ((CONDITION(cond))                                        \
-         ? MPL_LOG(LOG_INFO, MPL_LOG_TAG, fmt, ##__VA_ARGS__) \
-         : (void)0)
+#define MPL_LOGI_IF(cond, fmt, ...) \
+	((CONDITION(cond))                                              \
+		? MPL_LOG(LOG_INFO, MPL_LOG_TAG, fmt, ##__VA_ARGS__)   \
+		: (void)0)
 #endif
 
 /*
@@ -200,15 +197,15 @@ extern "C"
 #ifdef __KERNEL__
 #define MPL_LOGW(fmt, ...) printk(KERN_WARNING MPL_LOG_TAG fmt, ##__VA_ARGS__)
 #else
-#define MPL_LOGW(fmt, ...) MPL_LOG(LOG_WARN, MPL_LOG_TAG, fmt, ##__VA_ARGS__)
+#define MPL_LOGW LOGW
 #endif
 #endif
 
 #ifndef MPL_LOGW_IF
-#define MPL_LOGW_IF(cond, fmt, ...)                           \
-    ((CONDITION(cond))                                        \
-         ? MPL_LOG(LOG_WARN, MPL_LOG_TAG, fmt, ##__VA_ARGS__) \
-         : (void)0)
+#define MPL_LOGW_IF(cond, fmt, ...) \
+	((CONDITION(cond))					       \
+		? MPL_LOG(LOG_WARN, MPL_LOG_TAG, fmt, ##__VA_ARGS__)   \
+		: (void)0)
 #endif
 
 /*
@@ -218,15 +215,15 @@ extern "C"
 #ifdef __KERNEL__
 #define MPL_LOGE(fmt, ...) printk(KERN_ERR MPL_LOG_TAG fmt, ##__VA_ARGS__)
 #else
-#define MPL_LOGE(fmt, ...) MPL_LOG(LOG_ERROR, MPL_LOG_TAG, fmt, ##__VA_ARGS__)
+#define MPL_LOGE LOGE
 #endif
 #endif
 
 #ifndef MPL_LOGE_IF
-#define MPL_LOGE_IF(cond, fmt, ...)                            \
-    ((CONDITION(cond))                                         \
-         ? MPL_LOG(LOG_ERROR, MPL_LOG_TAG, fmt, ##__VA_ARGS__) \
-         : (void)0)
+#define MPL_LOGE_IF(cond, fmt, ...) \
+	((CONDITION(cond))					       \
+		? MPL_LOG(LOG_ERROR, MPL_LOG_TAG, fmt, ##__VA_ARGS__)  \
+		: (void)0)
 #endif
 
 /* --------------------------------------------------------------------- */
@@ -237,45 +234,43 @@ extern "C"
  * It is NOT stripped from release builds.  Note that the condition test
  * is -inverted- from the normal assert() semantics.
  */
-#define MPL_LOG_ALWAYS_FATAL_IF(cond, fmt, ...)            \
-    ((CONDITION(cond))                                     \
-         ? ((void)android_printAssert(#cond, MPL_LOG_TAG,  \
-                                      fmt, ##__VA_ARGS__)) \
-         : (void)0)
+#define MPL_LOG_ALWAYS_FATAL_IF(cond, fmt, ...) \
+	((CONDITION(cond))					   \
+		? ((void)android_printAssert(#cond, MPL_LOG_TAG,   \
+						fmt, ##__VA_ARGS__))	\
+		: (void)0)
 
 #define MPL_LOG_ALWAYS_FATAL(fmt, ...) \
-    (((void)android_printAssert(NULL, MPL_LOG_TAG, fmt, ##__VA_ARGS__)))
+	(((void)android_printAssert(NULL, MPL_LOG_TAG, fmt, ##__VA_ARGS__)))
 
 /*
  * Versions of MPL_LOG_ALWAYS_FATAL_IF and MPL_LOG_ALWAYS_FATAL that
  * are stripped out of release builds.
  */
 #if MPL_LOG_NDEBUG
-#define MPL_LOG_FATAL_IF(cond, fmt, ...)                       \
-    do                                                         \
-    {                                                          \
-        if (0)                                                 \
-            MPL_LOG_ALWAYS_FATAL_IF(cond, fmt, ##__VA_ARGS__); \
-    } while (0)
-#define MPL_LOG_FATAL(fmt, ...)                      \
-    do                                               \
-    {                                                \
-        if (0)                                       \
-            MPL_LOG_ALWAYS_FATAL(fmt, ##__VA_ARGS__) \
-    } while (0)
+#define MPL_LOG_FATAL_IF(cond, fmt, ...)				\
+	do {								\
+		if (0)							\
+			MPL_LOG_ALWAYS_FATAL_IF(cond, fmt, ##__VA_ARGS__); \
+	} while (0)
+#define MPL_LOG_FATAL(fmt, ...)						\
+	do {								\
+		if (0)							\
+			MPL_LOG_ALWAYS_FATAL(fmt, ##__VA_ARGS__)	\
+	} while (0)
 #else
 #define MPL_LOG_FATAL_IF(cond, fmt, ...) \
-    MPL_LOG_ALWAYS_FATAL_IF(cond, fmt, ##__VA_ARGS__)
+	MPL_LOG_ALWAYS_FATAL_IF(cond, fmt, ##__VA_ARGS__)
 #define MPL_LOG_FATAL(fmt, ...) \
-    MPL_LOG_ALWAYS_FATAL(fmt, ##__VA_ARGS__)
+	MPL_LOG_ALWAYS_FATAL(fmt, ##__VA_ARGS__)
 #endif
 
 /*
  * Assertion that generates a log message when the assertion fails.
  * Stripped out of release builds.  Uses the current MPL_LOG_TAG.
  */
-#define MPL_LOG_ASSERT(cond, fmt, ...) \
-    MPL_LOG_FATAL_IF(!(cond), fmt, ##__VA_ARGS__)
+#define MPL_LOG_ASSERT(cond, fmt, ...)			\
+	MPL_LOG_FATAL_IF(!(cond), fmt, ##__VA_ARGS__)
 
 /* --------------------------------------------------------------------- */
 
@@ -289,13 +284,10 @@ extern "C"
  */
 #ifndef MPL_LOG
 #ifdef REMOVE_LOGGING
-#define MPL_LOG(priority, tag, fmt, ...) \
-    do                                   \
-    {                                    \
-    } while (0)
+#define MPL_LOG(priority, tag, fmt, ...) do {} while (0)
 #else
-#define MPL_LOG(priority, tag, fmt, ...) \
-    MPL_LOG_PRI(priority, tag, fmt, ##__VA_ARGS__)
+#define MPL_LOG(priority, tag, fmt, ...)		\
+	MPL_LOG_PRI(priority, tag, fmt, ##__VA_ARGS__)
 #endif
 #endif
 
@@ -305,13 +297,13 @@ extern "C"
 #ifndef MPL_LOG_PRI
 #ifdef ANDROID
 #define MPL_LOG_PRI(priority, tag, fmt, ...) \
-    LOG(priority, tag, fmt, ##__VA_ARGS__)
+	LOG(priority, tag, fmt, ##__VA_ARGS__)
 #elif defined __KERNEL__
 #define MPL_LOG_PRI(priority, tag, fmt, ...) \
-    pr_debug(MPL_##priority tag fmt, ##__VA_ARGS__)
+	pr_debug(MPL_##priority tag fmt, ##__VA_ARGS__)
 #else
 #define MPL_LOG_PRI(priority, tag, fmt, ...) \
-    _MLPrintLog(MPL_##priority, tag, fmt, ##__VA_ARGS__)
+	_MLPrintLog(MPL_##priority, tag, fmt, ##__VA_ARGS__)
 #endif
 #endif
 
@@ -321,63 +313,61 @@ extern "C"
 #ifndef MPL_LOG_PRI_VA
 #ifdef ANDROID
 #define MPL_LOG_PRI_VA(priority, tag, fmt, args) \
-    android_vprintLog(priority, NULL, tag, fmt, args)
+	android_vprintLog(priority, NULL, tag, fmt, args)
 #elif defined __KERNEL__
 /* not allowed in the Kernel because there is no dev_dbg that takes a va_list */
 #else
 #define MPL_LOG_PRI_VA(priority, tag, fmt, args) \
-    _MLPrintVaLog(priority, NULL, tag, fmt, args)
+	_MLPrintVaLog(priority, NULL, tag, fmt, args)
 #endif
 #endif
 
-    /* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
 
-    /*
-     * ===========================================================================
-     *
-     * The stuff in the rest of this file should not be used directly.
-     */
+/*
+ * ===========================================================================
+ *
+ * The stuff in the rest of this file should not be used directly.
+ */
 
 #ifndef ANDROID
-    int _MLPrintLog(int priority, const char *tag, const char *fmt, ...);
-    int _MLPrintVaLog(int priority, const char *tag, const char *fmt, va_list args);
-    /* Final implementation of actual writing to a character device */
-    int _MLWriteLog(const char *buf, int buflen);
+int _MLPrintLog(int priority, const char *tag, const char *fmt,	...);
+int _MLPrintVaLog(int priority, const char *tag, const char *fmt, va_list args);
+/* Final implementation of actual writing to a character device */
+int _MLWriteLog(const char *buf, int buflen);
 #endif
 
-    static inline void __print_result_location(int result,
-                                               const char *file,
-                                               const char *func, int line)
-    {
-        MPL_LOGE("%s|%s|%d returning %d\n", file, func, line, result);
-    }
+static inline void __print_result_location(int result,
+					   const char *file,
+					   const char *func, int line)
+{
+	MPL_LOGE("%s|%s|%d returning %d\n", file, func, line, result);
+}
 
 #ifdef _WIN32
 /* The pragma removes warning about expression being constant */
-#define LOG_RESULT_LOCATION(condition)                      \
-    do                                                      \
-    {                                                       \
-        __print_result_location((int)(condition), __FILE__, \
-                                __func__, __LINE__);        \
-        __pragma(warning(suppress : 4127))                  \
-    } while (0)
+#define LOG_RESULT_LOCATION(condition) \
+    do {								\
+		__print_result_location((int)(condition), __FILE__,	\
+					__func__, __LINE__);		\
+        __pragma (warning(suppress : 4127 )) \
+	} while (0)
 #else
-#define LOG_RESULT_LOCATION(condition)                      \
-    do                                                      \
-    {                                                       \
-        __print_result_location((int)(condition), __FILE__, \
-                                __func__, __LINE__);        \
-    } while (0)
+#define LOG_RESULT_LOCATION(condition) \
+    do {								\
+		__print_result_location((int)(condition), __FILE__,	\
+					__func__, __LINE__);		\
+	} while (0)
 #endif
 
-#define INV_ERROR_CHECK(r_1329)      \
-    if (r_1329)                      \
-    {                                \
+
+#define INV_ERROR_CHECK(r_1329) \
+    if (r_1329) { \
         LOG_RESULT_LOCATION(r_1329); \
-        return r_1329;               \
+        return r_1329; \
     }
 
 #ifdef __cplusplus
 }
 #endif
-#endif /* _LIBS_CUTILS_MPL_LOG_H */
+#endif				/* _LIBS_CUTILS_MPL_LOG_H */
